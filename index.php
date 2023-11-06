@@ -30,7 +30,7 @@
 </head>
 <body>
     <h1>PulsAid</h1>
-    <div>
+    <div style="text-align: center;">
         <p><i>Providing faster assistance to people with heart failure, <br> therefor increasing chances of survival.</i></p>
     </div>
     <div>
