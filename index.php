@@ -31,7 +31,13 @@
 <body>
     <h1>PulsAid</h1>
     <div>
-        <p>Coming soon</p>
+        <p><i>Providing faster assistance to people with heart failure, <br> therefor increasing chances of survival.</i></p>
+    </div>
+    <div>
+        <p>PulsAid is coming soon...</p>
+    </div>
+    <div>
+        <p>Connect to our <a href="http://eepurl.com/iDkAa-/">newsletter</a> to stay up to date!</p>
     </div>
     <footer class="footer">
     <p>Follow us on our socials:</p>
