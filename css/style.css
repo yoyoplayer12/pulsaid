@@ -68,8 +68,6 @@ header a{
 a.active:link, a.active:visited, a.active:hover{
     color: var(--white-color);
     background-color: var(--secondary-color-light);
-    padding: 14px;
-    line-height: 24px;
 }
 ul{
     list-style: none;
@@ -175,6 +173,11 @@ c
         animation-name: none;
     }
     a.active:link, a.active:visited, a.active:hover{
-        color: var(--secondary-color-light);
+        color: var(--cta-color-light);
+        background-color: rgba(255, 0, 0, 0);
+        padding: 0;
+    }
+    ul a:link, ul a:visited {
+        padding: 0;
     }
 }
