@@ -19,33 +19,136 @@
     --black-color: #262626;
 
 }
+/* mobile */
 body{
     background-color: var(--secondary-color-light);
     color: var(--white-color);
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     margin: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
-    flex-direction: column;
+    box-sizing: border-box;
 }
-.footer{
+footer{
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    /* background-color: var(--main-color-light); */
     background-color: var(--black-color);
     color: var(--white-color);
-    padding: 1rem;
+    padding-bottom: 10px;
     text-align: center;
 }
-a:link, a:visited{
+header{
+    background-color: var(--secondary-color);
+    padding: 0px 20px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+header a{
+    text-decoration: none;
+}
+#pulsaid{
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+#pulsaid a{
+    color: var(--main-color);
+}
+ul{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px;
+}
+ul a:link, a:visited{
+    text-decoration: none;
+    color: var(--white-color);
+}
+ul a:hover{
+    text-decoration: wavy underline;
+}
+ul li:hover{
+    animation-name: beatlink;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+}
+ul li{
+    padding: 5px;
+    margin-left: 10px;
+}
+#hamburger-icon{
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+#hamburger-icon div{
+    width: 25px;
+    height: 3px;
+    background-color: var(--white-color);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.open .bar1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.open .bar2{
+    opacity: 0;
+}
+.open .bar3{
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+.mobile-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background: #3333337c;
+    color: #fff;
+}
+.mobile-menu.open{
+    transform: translateY(0);
+    top: 50px;
+}
+footer a:link, a:visited{
     text-decoration: underline;
     color: var(--white-color);
 }
-a:hover{
+footer a:hover{
     text-decoration: wavy underline;
+}
+@keyframes beatlink{
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.05;
+    }
+    100%{
+        scale: 1;
+    }
+}
+/* desktop */
+@media only screen and (max-width: 600px){
+    header nav{
+        display: none;
+    }
+    #hamburger-icon{
+        display: block;
+    }
+    ul li:hover{
+        animation-name: none;
+    }
 }
