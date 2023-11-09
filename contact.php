@@ -13,9 +13,9 @@
     <meta name="author" content="Lindsay Peeters, Evelien Vanophalvens, Yorick Devleeschouwer">
     <!-- open graphs -->
     <meta property="og:type" content="website" />
-    <meta property="og:secure_url" content="https://www.pulsaid.be/about.html" />
-    <meta property="og:url" content="http://www.pulsaid.be/about.html" />
-    <meta property="og:title" content="Pulsaid | About" />
+    <meta property="og:secure_url" content="https://www.pulsaid.be/contact.php" />
+    <meta property="og:url" content="http://www.pulsaid.be/contact.php" />
+    <meta property="og:title" content="Pulsaid | Contact" />
     <meta property="og:description" content="Providing faster assistance to people with heart failure, therefor increasing chances of survival." />
     <meta property="og:image" content="" />
     <meta property="og:site_name" content="PulsAid" />
@@ -23,7 +23,7 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:site" content="pulsaid.be" />
-    <meta property="twitter:title" content="Pulsaid | About" />
+    <meta property="twitter:title" content="Pulsaid | Contact" />
     <meta property="twitter:description" content="Providing faster assistance to people with heart failure, therefor increasing chances of survival." />
     <meta property="twitter:image" content="" />
     <script src="javascript/hamburger.js" defer></script>
@@ -34,11 +34,11 @@
         <div id="pulsaid"><a href="/">PulsAid</a></div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="howitworks.html">How it works</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li style="padding-right: 0;"><a href="donate.html" id="donate">Donate</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="howitworks.php">How it works</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="contact.php" class="active">Contact</a></li>
+                <li style="padding-right: 0;"><a href="donate.php" id="donate">Donate</a></li>
             </ul>
         </nav>
         <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
@@ -46,16 +46,16 @@
             <div class="bar2"></div>
             <div class="bar3"></div>
             <ul class="mobile-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="howitworks.html">How it works</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="donate.html">Donate</a></li> 
+                <li><a href="index.php">Home</a></li>
+                <li><a href="howitworks.php">How it works</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="contact.php" class="active">Contact</a></li>
+                <li><a href="donate.php">Donate</a></li> 
             </ul>
         </div>
     </header>
-    <h1>About</h1>
-    <p class="centered-text">More information on PulsAid is coming soon...</p>
+    <h1>Contact</h1>
+    <p class="centered-text">For inqueries, please contact us at <a href="mailto:contact@pulsaid.be">contact@pulsaid.be</a></p>
     <footer class="footer">
     <p>Connect to our <a href="http://eepurl.com/iDkAa-/">newsletter</a></p>
     <p>Follow us on our socials:</p>
