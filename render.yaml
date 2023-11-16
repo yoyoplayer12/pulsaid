@@ -1,6 +1,0 @@
-services:
-  - name: pulsaid
-    type: web
-    env: docker
-    envVars:
-      SERVER_NAME: pulsaid.be
