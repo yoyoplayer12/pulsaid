@@ -1,4 +1,0 @@
-services:
-  - name: pulsaid
-    type: web
-    env: docker
