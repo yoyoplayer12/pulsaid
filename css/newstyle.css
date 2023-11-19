@@ -261,6 +261,8 @@ a.contactctaheader:active, a.contactctaheader:hover, a.contactctaheader:link, a.
     border-radius: 24px;
 }
 .section-2 .block3{
+    display: grid;
+    grid-template-rows: 60px auto 60px;
     background-color: var(--main-color);
     grid-row: 1 / span 2;
     grid-column: 3;
@@ -355,8 +357,42 @@ footer{
 .footer1 img{
     border-radius: 8px;
 }
-.footer1 input{
+.footer1 form{
+    height: 70px;
+}
+.footer1 form input{
     width: 480px;
+    background-color: var(--secondary-color-light);
+    border: 0;
+    border-bottom: 1px var(--white-color) solid;
+    border-radius: 10px;
+    caret-color: var(--white-color);
+    color: var(--white-color);
+    padding: 0px 10px;
+    padding-bottom: 10px;
+}
+.footer1 form input:focus{
+    outline: none;
+}
+label.footerlabel{
+    position: absolute;
+    left: 80px;
+    font-size: 16px;
+    transform-origin: 0 0;
+    transition: transform 0.2s ease-in-out;
+}
+.footer1 form input:focus + label.footerlabel, input:not(:placeholder-shown) + label{
+    transform: translateY(-20px) scale(0.8);
+}
+.mailchimpfoot{
+    position: absolute;
+    left: 530px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 0;
+    background-image: url("https://portfolionew.blob.core.windows.net/pulsaid/icons/sendarrow.svg?sp=r&st=2023-11-06T12:27:29Z&se=2030-03-07T20:27:29Z&spr=https&sv=2022-11-02&sr=c&sig=8Rm7dlc%2F%2BmJsqeFwO8JzpZAZ8W3U%2B6NKiyt8gR1Jr20%3D");
+    cursor: pointer;
 }
 .footer1 h3{
     margin: 0;
@@ -413,14 +449,14 @@ footer{
     color: var(--white-color);
     font-family: "inter-semibold", sans-serif;
     font-size: 96px;
-    text-align: center;
     margin: 0;
     line-height: 1;
+    margin-left: 40px;
 }
 .undertext{
     color: var(--white-color);
-    text-align: center;
     margin: 0;
+    margin-left: 40px;
 }
 .section-1 .block1 .block1div{
     width: 380px;
@@ -441,4 +477,47 @@ footer{
     margin-left: 36px;
     margin-top: 60px;
     width: 356px;
+}
+/* section 2 */
+.section-2 .block2 .block2div{
+    margin-left: 34px;
+    margin-top: 32px;
+    width: 302px;
+}
+.section-2 .block3 .block3div{
+    height: 152px;
+    grid-row: 2;
+}
+.section-2 .block4 .block4div{
+    margin-left: 34px;
+    margin-top: 32px;
+    width: 302px;
+}
+.section-2 .block5 .block5div{
+    margin-left: 34px;
+    margin-top: 32px;
+    width: 302px;
+}
+/* section 3 */
+.section-3 .block1 .block1div{
+    margin-left: 34px;
+    margin-top: 32px;
+    width: 302px;
+}
+.section-3 .block2 .block2div{
+    margin-left: 34px;
+    margin-top: 32px;
+    width: 302px;
+}
+.section-3 .block3 .block3div{
+    margin-left: 34px;
+    margin-top: 32px;
+    width: 302px;
+}
+.section-3 .block3 .block3div a:hover, .section-3 .block3 .block3div a:link, .section-3 .block3 .block3div a:visited{
+    padding: 10px 15px;
+    border: 1px var(--black-color) solid;
+    color: var(--black-color);
+    text-decoration: none;
+    border-radius: 8px;
 }
