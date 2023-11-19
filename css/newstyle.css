@@ -39,6 +39,10 @@
     font-family: "inter-thin";
     src: url(../fonts/Inter/static/Inter-Thin.ttf);
 }
+@font-face {
+    font-family: "inter-semibold";
+    src: url(../fonts/Inter/static/Inter-SemiBold.ttf);
+}
 body{
     background-color: var(--white-color);
     color: var(--black-color);
@@ -53,15 +57,24 @@ h1{
     font-size: 36px;
     color: var(--white-color);
 }
-h3{
-    font-family: "public-regular", sans-serif;
-    font-size: 20px;
-    color: var(--white-color);
+h2{
+    font-family: "inter-semibold", sans-serif;
+    font-size: 24px;
 }
 p{
     font-family: "inter-thin", sans-serif;
     font-size: 16px;
     line-height: 1.5;
+}
+h3{
+    font-family: "public-regular", sans-serif;
+    font-size: 20px;
+    color: var(--white-color);
+}
+q{
+    font-family: "public-thin", sans-serif;
+    font-size: 32px;
+    color: var(--black-color);
 }
 /* index header */
 header{
@@ -176,6 +189,8 @@ a.contactctaheader:active, a.contactctaheader:hover, a.contactctaheader:link, a.
     margin-top: 60px;
 }
 .section-1 .block1{
+    display: grid;
+    grid-template-rows: 123px auto 123px;
     background-color: var(--main-color);
     grid-row: auto / span 2;
     width: 380px;
@@ -191,6 +206,8 @@ a.contactctaheader:active, a.contactctaheader:hover, a.contactctaheader:link, a.
     grid-column: auto / span 2;
 }
 .section-1 .block3{
+    display: grid;
+    grid-template-rows: 112px auto 112px;
     background-color: var(--main-color);
     grid-row: auto / span 2;
     grid-column: 1;
@@ -391,3 +408,37 @@ footer{
     margin-left: 0;
 }
 /* end footer */
+/* content */
+.bignumber{
+    color: var(--white-color);
+    font-family: "inter-semibold", sans-serif;
+    font-size: 96px;
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+}
+.undertext{
+    color: var(--white-color);
+    text-align: center;
+    margin: 0;
+}
+.section-1 .block1 .block1div{
+    width: 380px;
+    height: 370px;
+    grid-row: 2;
+}
+.section-1 .block2 .block2div{
+    margin-left: 60px;
+    margin-top: 56px;
+    width: 647px;
+}
+.section-1 .block3 .block3div{
+    width: 380px;
+    height: 370px;
+    grid-row: 2;
+}
+.section-1 .block4 .block4div{
+    margin-left: 36px;
+    margin-top: 60px;
+    width: 356px;
+}
