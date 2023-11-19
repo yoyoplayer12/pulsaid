@@ -50,8 +50,16 @@
             </ul>
         </nav>
         <div class="indexvisualcolumns">
-            <img src="https://portfolionew.blob.core.windows.net/pulsaid/photos/homevisual.svg?sp=r&st=2023-11-19T13:11:44Z&se=2030-04-28T20:11:44Z&sv=2022-11-02&sr=c&sig=yVK8F3f3DwHqTGL8EeiFPQ%2BrkMlnKZmrdlwnsd2gs6Q%3D"
-                class="indexvisual" alt="">
+            <img src="https://portfolionew.blob.core.windows.net/pulsaid/photos/maskhome.svg?sp=r&st=2023-11-06T12:27:29Z&se=2030-03-07T20:27:29Z&spr=https&sv=2022-11-02&sr=c&sig=8Rm7dlc%2F%2BmJsqeFwO8JzpZAZ8W3U%2B6NKiyt8gR1Jr20%3D"class="indexvisual" alt="">
+            <svg class="indexvisual" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1063.05 897.01">
+                <mask id="svgmask3">
+                    <path d="m0-.67h1063.05v627.48c0,148.86-120.68,269.54-269.54,269.54H0V-.67Z"
+                        style="fill:#ffffff; stroke-width:0px;" />
+                </mask>
+                <image class="indexvisualmasked"
+                    href="https://portfolionew.blob.core.windows.net/pulsaid/photos/maskedhome.svg?sp=r&st=2023-11-06T12:27:29Z&se=2030-03-07T20:27:29Z&spr=https&sv=2022-11-02&sr=c&sig=8Rm7dlc%2F%2BmJsqeFwO8JzpZAZ8W3U%2B6NKiyt8gR1Jr20%3D"
+                    mask="url(#svgmask3)"></image>
+            </svg>
         </div>
         <div class="headercontentindex">
             <h1>PulsAid</h1>
@@ -149,13 +157,14 @@
         <div class="footer1">
             <h3>Don't miss a beat!</h3>
             <form
-            action="https://pulsaid.us21.list-manage.com/subscribe/post?u=50f7324e96c02fa8c4f0dd4e2&amp;id=0c24c07d72&amp;f_id=00e2e6e6f0"
-            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self"
-            novalidate="">
-                <input type="email" autocapitalize="off" autocorrect="off" name="EMAIL" id="mce-EMAIL" size="25" value=""
-                    placeholder=" " required>
+                action="https://pulsaid.us21.list-manage.com/subscribe/post?u=50f7324e96c02fa8c4f0dd4e2&amp;id=0c24c07d72&amp;f_id=00e2e6e6f0"
+                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                target="_self" novalidate="">
+                <input type="email" autocapitalize="off" autocorrect="off" name="EMAIL" id="mce-EMAIL" size="25"
+                    value="" placeholder=" " required>
                 <label for="EMAIL" class="footerlabel">Your email</label>
-                <div aria-hidden="true" style="position: absolute; left: -5000px;"><input type="text" name="b_50f7324e96c02fa8c4f0dd4e2_0c24c07d72" tabindex="-1" value=""></div>
+                <div aria-hidden="true" style="position: absolute; left: -5000px;"><input type="text"
+                        name="b_50f7324e96c02fa8c4f0dd4e2_0c24c07d72" tabindex="-1" value=""></div>
                 <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="mailchimpfoot"></button>
             </form>
             <img src="https://placehold.co/90" alt="Placeholder logo">
@@ -199,5 +208,13 @@
         </div>
     </footer>
 </body>
-
 </html>
+<script>
+    window.addEventListener('scroll', function () {
+        var scrollPosition = window.pageYOffset;
+        var opacity = 1 - scrollPosition / window.innerHeight;
+        document.querySelector('.indexvisual').style.transform = 'translateY(-' + scrollPosition * 0.7 + 'px)';
+        document.querySelector('.indexvisualmasked').style.transform = 'translateY(' + scrollPosition * 0.7 + 'px)';
+        document.querySelector('.indexvisualmasked').style.opacity = Math.max(opacity, 0);
+    });
+</script>
