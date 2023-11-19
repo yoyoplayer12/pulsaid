@@ -530,3 +530,30 @@ label.footerlabel{
     text-decoration: none;
     border-radius: 8px;
 }
+/* 404 */
+.headercontent404 h1{
+    font-size: 96px;
+    font-family: 'inter-semibold', sans-serif;
+    text-align: center;
+}
+.headercontent404 p{
+    font-size: 40px;
+    font-family: 'inter-semibold', sans-serif;
+    text-align: center;
+}
+.headercontent404{
+    width: 100vh;
+}
+.headerctas404{
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.pulsate {
+    animation: pulsate 0.5s ease-in-out infinite;
+}
+@keyframes pulsate {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
