@@ -1,0 +1,148 @@
+:root{
+    /* main color */
+    --main-color: #2D7E7C;
+    --main-color-light: #51B797;
+    /* secondary color */
+    --secondary-color: #16162A;
+    --secondary-color-light: #1E3655;
+    /* call to action color */
+    --cta-color: #EF795C;
+    --cta-color-light: #EE9A79;
+    /* semantic  colors */
+    --success-color: #29CF4E;
+    --warning-color: #E51C1C;
+    --info-color: #4770FF;
+    /* neutral colors */
+    --white-color: #FFFDFA;
+    --cream-color: #FFF5E0;
+    --whitegray-color: #D9D9D9;
+    /* --gray-color: #FFF5E0; */
+    --black-color: #262626;
+}
+@font-face {
+    font-family: "public-thin";
+    src: url(../fonts/Public_Sans/static/PublicSans-Thin.ttf) format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: "inter-black";
+    src: url(../fonts/Inter/static/Inter-Black.ttf);
+}
+@font-face {
+    font-family: "inter-thin";
+    src: url(../fonts/Inter/static/Inter-Thin.ttf);
+}
+body{
+    background-color: var(--white-color);
+    color: var(--black-color);
+    font-family: 'inter-thin', sans-serif ;
+    font-size: 1.2rem;
+    margin: 0px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+h1{
+    font-family: "inter-black", sans-serif;
+    font-size: 36px;
+    color: var(--white-color);
+}
+p{
+    font-family: "inter-thin", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+/* index header */
+header div p{
+    color: var(--white-color);
+}
+.indexvisualcolumns{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.indexvisual{
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white-color);
+    font-size: 24px;
+    font-family: 'public-thin', sans-serif;
+}
+nav ul.left{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    height: 100%;
+}
+nav ul.right{
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    padding-right: 70px;
+}
+nav ul li{
+    padding: 0px 20px;
+}
+nav ul.left li:first-child{
+    padding-left: 64px;
+}
+.donate{
+    background-color: var(--cta-color);
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+.language{
+    background-color: var(--whitegray-color);
+    padding: 15px;
+    border-radius: 8px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+nav ul li a.active, nav ul li a:hover{
+    border-bottom: 2px solid var(--white-color);
+}
+.headercontentindex{
+    margin-left: 64px;
+}
+.headercontentindex p{
+    width: 440px;
+}
+.headerctas{
+    width: 380px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+a.donatectaheader:active, a.donatectaheader:hover, a.donatectaheader:link, a.donatectaheader:visited{
+    background-color: var(--main-color-light);
+    color: var(--white-color);
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 10px;
+    width: 120px;
+    border-radius: 8px;
+}
+a.contactctaheader:active, a.contactctaheader:hover, a.contactctaheader:link, a.contactctaheader:visited{
+    border: 1px var(--white-color) solid;
+    color: var(--white-color);
+    text-decoration: none;
+    padding: 10px 10px;
+    text-align: center;
+    width: 180px;
+    border-radius: 8px;
+}
+/* end index header */
