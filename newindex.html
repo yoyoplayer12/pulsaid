@@ -50,7 +50,9 @@
             </ul>
         </nav>
         <div class="indexvisualcolumns">
-            <img src="https://portfolionew.blob.core.windows.net/pulsaid/photos/maskhome.svg?sp=r&st=2023-11-06T12:27:29Z&se=2030-03-07T20:27:29Z&spr=https&sv=2022-11-02&sr=c&sig=8Rm7dlc%2F%2BmJsqeFwO8JzpZAZ8W3U%2B6NKiyt8gR1Jr20%3D"class="indexvisual" alt="">
+            <img src="https://portfolionew.blob.core.windows.net/pulsaid/photos/maskhome.svg?sp=r&st=2023-11-06T12:27:29Z&se=2030-03-07T20:27:29Z&spr=https&sv=2022-11-02&sr=c&sig=8Rm7dlc%2F%2BmJsqeFwO8JzpZAZ8W3U%2B6NKiyt8gR1Jr20%3D"
+                class="indexvisual" alt="">
+            <img src="https://placehold.co/310x509" class="indexvisualpic" alt="">
             <svg class="indexvisual" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1063.05 897.01">
                 <mask id="svgmask3">
                     <path d="m0-.67h1063.05v627.48c0,148.86-120.68,269.54-269.54,269.54H0V-.67Z"
@@ -63,13 +65,18 @@
         </div>
         <div class="headercontentindex">
             <h1>PulsAid</h1>
-            <p class="indexp">PulsAid is een baanbrekend initiatief met een missie: overlevingskansen vergroten tijdens hartstilstanden.
+            <p class="indexp">PulsAid is een baanbrekend initiatief met een missie: overlevingskansen vergroten tijdens
+                hartstilstanden.
                 <br>
-                Door ons netwerk van getrainde hulpverleners snel te mobiliseren, streeft PulsAid ernaar de overlevingskansen in België aanzienlijk te verhogen, zodat meer levens worden gered en de impact van hartstilstanden wordt geminimaliseerd.
+                Door ons netwerk van getrainde hulpverleners snel te mobiliseren, streeft PulsAid ernaar de
+                overlevingskansen in België aanzienlijk te verhogen, zodat meer levens worden gered en de impact van
+                hartstilstanden wordt geminimaliseerd.
                 <br>
                 <br>
-                Wees deel van de verandering. Sluit je aan bij PulsAid en help mee om de zorg voor het hart in België vorm te geven. Samen kunnen we het verschil maken wanneer elke seconde telt.</p>
-                
+                Wees deel van de verandering. Sluit je aan bij PulsAid en help mee om de zorg voor het hart in België
+                vorm te geven. Samen kunnen we het verschil maken wanneer elke seconde telt.
+            </p>
+
             <div class="headerctas">
                 <a href="donate.html" class="donatectaheader">Donate</a>
                 <a href="contact.html" class="contactctaheader">Contact</a>
@@ -91,7 +98,7 @@
                     Onze missie is duidelijk: overlevingskansen tijdens hartstilstanden vergroten.
                     Met een netwerk van getrainde hulpverleners mobiliseren we snel,
                     redden meer levens en minimaliseren de impact.
-                    </p>
+                </p>
             </div>
         </div>
         <div class="block3">
@@ -114,7 +121,8 @@
         <div class="block2">
             <div class="block2div">
                 <h3 style="color: var(--black-color);">Ons doel</h3>
-                <p>Meer levens redden, en de kansen verhogen van mensen met hartfalen. Zo willen we de toekomst van de hartzorg vormen.</p>
+                <p>Meer levens redden, en de kansen verhogen van mensen met hartfalen. Zo willen we de toekomst van de
+                    hartzorg vormen.</p>
             </div>
         </div>
         <div class="block3">
@@ -212,13 +220,17 @@
         </div>
     </footer>
 </body>
+
 </html>
 <script>
     window.addEventListener('scroll', function () {
         var scrollPosition = window.pageYOffset;
         var opacity = 1 - scrollPosition / window.innerHeight;
+        var scale = 1 - scrollPosition / 200; // Adjust 2000 to control the rate of scaling
         document.querySelector('.indexvisual').style.transform = 'translateY(-' + scrollPosition * 0.7 + 'px)';
         document.querySelector('.indexvisualmasked').style.transform = 'translateY(' + scrollPosition * 0.7 + 'px)';
         document.querySelector('.indexvisualmasked').style.opacity = Math.max(opacity, 0);
+        scale = Math.max(scale, 0); // Prevent the image from getting too small
+        document.querySelector('.indexvisualpic').style.transform = 'translateY(' + scrollPosition * 0.7 + 'px) scale(' + scale + ')';
     });
 </script>
