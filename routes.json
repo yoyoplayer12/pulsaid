@@ -1,0 +1,19 @@
+{
+    "routes": [
+      {
+        "route": "/.well-known/**",
+        "statusCode": 404,
+        "allowedRoles": ["anonymous"]
+      },
+      {
+        "route": "/api/**",
+        "allowedRoles": ["anonymous"]
+      },
+      {
+        "route": "/**",
+        "serve": "404.html",
+        "statusCode": 404
+      }
+    ]
+  }
+  
