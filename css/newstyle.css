@@ -49,7 +49,6 @@ body{
     font-family: 'inter-thin', sans-serif ;
     font-size: 1.2rem;
     margin: 0px;
-    height: 100vh;
     box-sizing: border-box;
 }
 h1{
@@ -106,6 +105,7 @@ header div p{
     left: 0;
     height: 100vh;
     transition: opacity ease-in-out;
+    z-index: -1;
 }
 nav{
     display: flex;
