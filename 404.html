@@ -50,16 +50,18 @@
             </ul>
         </nav>
         <div class="indexvisualcolumns">
-            <img style="position: absolute; height: 101vh;" src="https://portfolionew.blob.core.windows.net/pulsaid/photos/maskhome.svg?sp=r&st=2023-11-06T12:27:29Z&se=2030-03-07T20:27:29Z&spr=https&sv=2022-11-02&sr=c&sig=8Rm7dlc%2F%2BmJsqeFwO8JzpZAZ8W3U%2B6NKiyt8gR1Jr20%3D"class="indexvisual" alt="">
+            <img style="position: absolute; height: 101vh;"
+                src="https://portfolionew.blob.core.windows.net/pulsaid/photos/maskhome.svg?sp=r&st=2023-11-06T12:27:29Z&se=2030-03-07T20:27:29Z&spr=https&sv=2022-11-02&sr=c&sig=8Rm7dlc%2F%2BmJsqeFwO8JzpZAZ8W3U%2B6NKiyt8gR1Jr20%3D"
+                class="indexvisual" alt="">
         </div>
         <div class="headercontent404">
             <h1 class="pulsate">404</h1>
             <p>Hier lijkt iets onregelmatig te kloppen</p>
             <div class="headerctas404">
-                <a href="index.html" class="contactctaheader">Jump (to) start</a>
+                <a href="index.html" class="contactctaheader">Jump (to) Start</a>
             </div>
         </div>
-    </header>    
+    </header>
     <footer class="footer">
         <div class="footer1">
             <h3>Don't miss a beat!</h3>
@@ -116,4 +118,26 @@
         </div>
     </footer>
 </body>
+
 </html>
+<script>
+    var link = document.querySelector('a.contactctaheader');
+    link.addEventListener('mouseover', function () {
+        this.textContent = 'Jump Start'; // Replace 'New Text' with the text you want to display on hover
+    });
+
+    link.addEventListener('mouseout', function () {
+        this.textContent = 'Jump (to) Start'; // Replace 'Original Text' with the original text of the link
+    });
+    //back to index
+    var timeoutId;
+    link.addEventListener('mouseover', function () {
+        timeoutId = setTimeout(function () {
+            window.location.href = 'index.html'; // Replace with the path to your index page
+        }, 10000); // 10000 milliseconds = 10 seconds
+    });
+
+    link.addEventListener('mouseout', function () {
+        clearTimeout(timeoutId); // Cancel the redirection if the mouse leaves the link before 10 seconds
+    });
+</script>

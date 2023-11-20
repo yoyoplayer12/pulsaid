@@ -181,7 +181,7 @@ a.donatectaheader:active, a.donatectaheader:hover, a.donatectaheader:link, a.don
     width: 120px;
     border-radius: 8px;
 }
-a.contactctaheader:active, a.contactctaheader:hover, a.contactctaheader:link, a.contactctaheader:visited{
+a.contactctaheader:active, a.contactctaheader:link, a.contactctaheader:visited{
     border: 1px var(--white-color) solid;
     color: var(--white-color);
     text-decoration: none;
@@ -189,6 +189,12 @@ a.contactctaheader:active, a.contactctaheader:hover, a.contactctaheader:link, a.
     text-align: center;
     width: 180px;
     border-radius: 8px;
+    transform: scale(1);
+    transition: background-color 10s ease-in-out, transform 10s ease-in-out;
+}
+a.contactctaheader:hover{
+    background-color: var(--cta-color);
+    transform: scale(2); /* Adjust the scale factor as per your requirement */
 }
 /* end index header */
 /* section 1 */
