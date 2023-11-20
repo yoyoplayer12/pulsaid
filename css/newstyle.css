@@ -380,7 +380,7 @@ footer{
     background-color: var(--secondary-color-light);
     border: 0;
     border-bottom: 1px var(--white-color) solid;
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
     caret-color: var(--white-color);
     color: var(--white-color);
     padding: 0px 10px;
