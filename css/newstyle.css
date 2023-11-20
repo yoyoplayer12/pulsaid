@@ -625,7 +625,7 @@ header.about{
 }
 
 /* media query for screens with smaller height than 660px */
-
+/* landscape */
 @media screen and (max-height: 660px) {
     header{
         height: fit-content;
@@ -640,7 +640,19 @@ header.about{
         height: 660px;
     }
 }
-@media screen and (max-width: 1280px) {
+/* fix header pic index */
+@media screen and (max-width: 1280px){
+    .indexvisualpic{
+        display: block;
+        position: absolute;
+        top: 110px;
+        left: auto;
+        right: 45px;
+        border-radius: 24px;
+    }
+}
+/* ipad */
+@media screen and (max-width: 1100px) {
     .indexvisual{
         display: none;
     }
@@ -652,6 +664,21 @@ header.about{
         left: 0;
         z-index: -1;
         width: auto;
-        height: auto;
     }
+    .indexvisualmasked{
+        display: block;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: auto;
+    }
+    
+}
+/* smoll ipad */
+@media screen and (max-width: 950px){
+    .indexvisualpic{
+        display: none;
+    }   
 }
