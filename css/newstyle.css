@@ -93,6 +93,9 @@ header div p{
     left: 0;
     z-index: -1;
 }
+.indexvisualmobile{
+    display: none;
+}
 .indexvisualpic{
     position: fixed;
     top: 110px;
@@ -257,7 +260,6 @@ a.contactctaheader:hover{
 
 /* section 2 */
 .section-2{
-    height: 70vh;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: 122px 122px 139.5px 139.5px;
@@ -313,7 +315,6 @@ a.contactctaheader:hover{
 /* end section 2 */
 /* section 3 */
 .section-3{
-    height: 30vh;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: 1fr;
@@ -323,6 +324,7 @@ a.contactctaheader:hover{
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
+    margin-bottom: 60px;
 }
 .section-3 .block1{
     background-color: var(--gray-color);
@@ -620,4 +622,36 @@ label.footerlabel{
 }
 header.about{
     height: 300px;
+}
+
+/* media query for screens with smaller height than 660px */
+
+@media screen and (max-height: 660px) {
+    header{
+        height: fit-content;
+    }
+    .indexvisual{
+        height: 660px;
+    }
+    .indexvisualpic{
+        display: none;
+    }
+    .indexvisualmasked{
+        height: 660px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .indexvisual{
+        display: none;
+    }
+    .indexvisualmobile{
+        display: block;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: auto;
+        height: auto;
+    }
 }
