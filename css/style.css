@@ -107,11 +107,6 @@ header div p{
     left: 65vw;
     border-radius: 24px;
 }
-  @media all and (min-width: 1600px) {
-      .indexvisualpic{
-          left: 1150px;
-      }
-  }
 .indexvisualmasked{
     position: fixed;
     top: 0;
@@ -202,12 +197,22 @@ a.contactctaheader:active, a.contactctaheader:link, a.contactctaheader:visited{
     text-align: center;
     width: 180px;
     border-radius: 8px;
-    transform: scale(1);
-    transition: background-color 10s ease-in-out, transform 10s ease-in-out;
 }
 a.contactctaheader:hover{
     background-color: var(--cta-color);
-    transform: scale(2); /* Adjust the scale factor as per your requirement */
+}
+
+a.fourofourctaheader:active, a.fourofourctaheader:link, a.fourofourctaheader:visited{
+    border: 1px var(--white-color) solid;
+    color: var(--white-color);
+    text-decoration: none;
+    padding: 10px 10px;
+    text-align: center;
+    width: 180px;
+    border-radius: 8px;
+}
+a.fourofourctaheader:hover{
+    background-color: var(--cta-color);
 }
 /* end index header */
 /* section 1 */
@@ -693,4 +698,10 @@ header.about{
     .indexvisualpic{
         display: none;
     }   
+}
+/*fix index visualpic*/
+@media all and (min-width: 1600px) {
+    .indexvisualpic{
+        left: 1150px;
+    }
 }
