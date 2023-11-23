@@ -93,7 +93,7 @@ header div p{
     left: 0;
     z-index: -1;
 }
-.indexvisualmobile{
+.visualmobile{
     display: none;
 }
 .indexvisualpic{
@@ -656,7 +656,7 @@ header.about{
     .indexvisual{
         display: none;
     }
-    .indexvisualmobile{
+    .visualmobile{
         display: block;
         height: 100vh;
         position: fixed;
