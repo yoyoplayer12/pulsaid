@@ -181,7 +181,7 @@ nav ul li a.active, nav ul li a:hover{
     grid-template-columns: 1fr 1fr;
 }
 a.donatectaheader:active, a.donatectaheader:hover, a.donatectaheader:link, a.donatectaheader:visited{
-    background-color: var(--main-color-light);
+    background-color: var(--cta-color);
     color: var(--white-color);
     text-decoration: none;
     text-align: center;
