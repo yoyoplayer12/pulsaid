@@ -3,8 +3,8 @@
     --main-color: #2D7E7C;
     --main-color-light: #51B797;
     /* secondary color */
-    --secondary-color: #16162A;
-    --secondary-color-light: #1E3655;
+    --secondary-color: #505CA5;
+    --secondary-color-light: #6F79B9;
     /* call to action color */
     --cta-color: #EF795C;
     --cta-color-light: #EE9A79;
@@ -89,7 +89,7 @@ header div p{
 .indexvisual{
     height: 100vh;
     width: 80vw;
-    background-color: var(--secondary-color-light);
+    background-color: var(--secondary-color);
     border-radius: 0 0 250px 0;
     min-width: 1105px;
     max-width: 1280px;
@@ -598,18 +598,20 @@ label.footerlabel{
     margin-right: 60px;
 }
 .aboutblock1{
-    height: 302px;
+    height: auto;
     margin-bottom: 24px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 250px;
     padding-left: 60px;
+    max-width: 1800px;
 }
 .about1div{
-    margin-top: 60px;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 .aboutblock1 img{
-    margin-top: 20px;
+    margin-top: 70px;
 }
 .aboutblock1 h2{
     margin: 0;
