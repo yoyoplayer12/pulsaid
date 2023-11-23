@@ -58,7 +58,7 @@
             <h1 class="pulsate">404</h1>
             <p>Hier lijkt iets onregelmatig te kloppen</p>
             <div class="headerctas404">
-                <a href="index.html" class="contactctaheader">Jump (to) Start</a>
+                <a href="index.html" class="fourofourctaheader">Jump (to) Start</a>
             </div>
         </div>
     </header>
@@ -121,23 +121,12 @@
 
 </html>
 <script>
-    var link = document.querySelector('a.contactctaheader');
+    var link = document.querySelector('a.fourofourctaheader');
     link.addEventListener('mouseover', function () {
         this.textContent = 'Jump Start'; // Replace 'New Text' with the text you want to display on hover
     });
 
     link.addEventListener('mouseout', function () {
         this.textContent = 'Jump (to) Start'; // Replace 'Original Text' with the original text of the link
-    });
-    //back to index
-    var timeoutId;
-    link.addEventListener('mouseover', function () {
-        timeoutId = setTimeout(function () {
-            window.location.href = 'index.html'; // Replace with the path to your index page
-        }, 10000); // 10000 milliseconds = 10 seconds
-    });
-
-    link.addEventListener('mouseout', function () {
-        clearTimeout(timeoutId); // Cancel the redirection if the mouse leaves the link before 10 seconds
     });
 </script>
