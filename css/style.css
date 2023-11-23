@@ -104,7 +104,7 @@ header div p{
 .indexvisualpic{
     position: fixed;
     top: 110px;
-    left: 100vh;
+    left: 72vw;
     border-radius: 24px;
 }
 .indexvisualmasked{
