@@ -50,7 +50,7 @@
     src: url(../fonts/Comfortaa/static/Comfortaa-SemiBold.ttf);
 }
 
-
+/* general */
 body{
     background-color: var(--white-color);
     color: var(--black-color);
@@ -82,6 +82,11 @@ q{
     font-family: "poppins-light", sans-serif;
     font-size: 32px;
     color: var(--black-color);
+}
+.justheadercontent{
+    width: 100vh;
+    margin-left: 64px;
+    margin-top: 74px;
 }
 /* index header */
 header{
@@ -606,11 +611,6 @@ label.footerlabel{
     100% { transform: scale(1); }
 }
 /* about */
-.headercontentabout{
-    width: 100vh;
-    margin-left: 64px;
-    margin-top: 74px;
-}
 .about .aboutblock1, .about .aboutblock2, .about .aboutblock3{
     width: auto;
     margin-bottom: 24px;
@@ -740,6 +740,54 @@ header.about{
     background-color: var(--cta-color);
     border: var(--cta-color) 1px solid;
 }
+/* how it works */
+.work .workblock1, .work .workblock2, .work .workblock3{
+    width: auto;
+    margin-bottom: 24px;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    border-radius: 24px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.workblock1{
+    height: auto;
+    margin-bottom: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 250px;
+    padding-left: 60px;
+    max-width: 1800px;
+}
+.workblock1 img{
+    border-radius: 24px;
+}
+.workblock1 h2{
+    margin: 0;
+    margin-bottom: 12px;
+}
+.workblock1 p{
+    width: 479px;
+}
+.work1div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.work1img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+header.work{
+    height: 300px;
+}
+
 /* media query for screens with smaller height than 660px */
 /* landscape */
 @media screen and (max-height: 660px) {
