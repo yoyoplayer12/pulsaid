@@ -19,59 +19,67 @@
     --gray-color: rgb(248, 248, 248);
     --black-color: #262626;
 }
+
+/* poppins */
+
 @font-face {
-    font-family: "public-thin";
-    src: url(../fonts/Public_Sans/static/PublicSans-Thin.ttf) format('truetype');
+    font-family: "poppins-extralight";
+    src: url(../fonts/Poppins/Poppins-ExtraLight.ttf);
+}
+@font-face {
+    font-family: "poppins-light";
+    src: url(../fonts/Poppins/Poppins-Light.ttf) format('truetype');
     font-weight: 100;
     font-style: normal;
 }
 @font-face {
-    font-family: "public-regular";
-    src: url(../fonts/Public_Sans/static/PublicSans-Regular.ttf) format('truetype');
+    font-family: "poppins-regular";
+    src: url(../fonts/Poppins/Poppins-Regular.ttf) format('truetype');
     font-weight: 400;
     font-style: normal;
 }
+
+/* comfortaa */
 @font-face {
-    font-family: "inter-black";
-    src: url(../fonts/Inter/static/Inter-Black.ttf);
+    font-family: "comfortaa-bold";
+    src: url(../fonts/Comfortaa/static/Comfortaa-Bold.ttf);
 }
+
 @font-face {
-    font-family: "inter-thin";
-    src: url(../fonts/Inter/static/Inter-Thin.ttf);
+    font-family: "comfortaa-semibold";
+    src: url(../fonts/Comfortaa/static/Comfortaa-SemiBold.ttf);
 }
-@font-face {
-    font-family: "inter-semibold";
-    src: url(../fonts/Inter/static/Inter-SemiBold.ttf);
-}
+
+
 body{
     background-color: var(--white-color);
     color: var(--black-color);
-    font-family: 'inter-thin', sans-serif ;
+    font-family: 'poppins-extralight', sans-serif ;
     font-size: 1.2rem;
     margin: 0px;
     box-sizing: border-box;
 }
 h1{
-    font-family: "inter-black", sans-serif;
+    font-family: "comfortaa-bold", sans-serif;
     font-size: 36px;
     color: var(--white-color);
 }
 h2{
-    font-family: "inter-semibold", sans-serif;
+    font-family: "comfortaa-semibold", sans-serif;
     font-size: 24px;
 }
 p{
-    font-family: "inter-thin", sans-serif;
+    font-family: "poppins-extralight", sans-serif;
     font-size: 16px;
     line-height: 1.5;
 }
 h3{
-    font-family: "public-regular", sans-serif;
+    font-family: "poppins-light", sans-serif;
     font-size: 20px;
     color: var(--white-color);
 }
 q{
-    font-family: "public-thin", sans-serif;
+    font-family: "poppins-light", sans-serif;
     font-size: 32px;
     color: var(--black-color);
 }
@@ -121,7 +129,7 @@ nav{
     align-items: center;
     color: var(--white-color);
     font-size: 24px;
-    font-family: 'public-thin', sans-serif;
+    font-family: 'poppins-regular', sans-serif;
 }
 nav ul.left{
     list-style-type: none;
@@ -491,7 +499,7 @@ label.footerlabel{
 /* content */
 .bignumber{
     color: var(--white-color);
-    font-family: "inter-semibold", sans-serif;
+    font-family: "comfortaa-semibold", sans-serif;
     font-size: 96px;
     margin: 0;
     line-height: 1;
@@ -518,9 +526,12 @@ label.footerlabel{
     grid-row: 2;
 }
 .section-1 .block4 .block4div{
-    margin-left: 36px;
-    margin-top: 60px;
     width: 356px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 36px;
 }
 /* section 2 */
 .section-2 .block2 .block2div{
@@ -568,12 +579,12 @@ label.footerlabel{
 /* 404 */
 .headercontent404 h1{
     font-size: 96px;
-    font-family: 'inter-semibold', sans-serif;
+    font-family: 'comfortaa-semibold', sans-serif;
     text-align: center;
 }
 .headercontent404 p{
     font-size: 40px;
-    font-family: 'inter-semibold', sans-serif;
+    font-family: 'comfortaa-semibold', sans-serif;
     text-align: center;
 }
 .headercontent404{
@@ -616,22 +627,57 @@ label.footerlabel{
     padding-left: 60px;
     max-width: 1800px;
 }
-.about1div{
-    margin-top: 70px;
-    margin-bottom: 70px;
-}
 .aboutblock1 img{
-    margin-top: 70px;
+    border-radius: 24px;
 }
 .aboutblock1 h2{
     margin: 0;
     margin-bottom: 12px;
 }
+.aboutblock1 p{
+    width: 479px;
+}
+.about1div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.about1img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
 .aboutblock2{
-    height: 302px;
+    height: auto;
     margin-bottom: 24px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+.aboutblock2 img{
+    border-radius: 24px;
+}
+.about2img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+}
+.aboutblock2 p{
+    width: 479px;
+    margin-right: 60px;
+}
+.about2div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 .aboutblock3{
     height: 748px;
