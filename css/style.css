@@ -208,6 +208,7 @@ a.contactctaheader:active, a.contactctaheader:link, a.contactctaheader:visited{
 }
 a.contactctaheader:hover{
     background-color: var(--cta-color);
+    border: var(--cta-color) 1px solid;
 }
 
 a.fourofourctaheader:active, a.fourofourctaheader:link, a.fourofourctaheader:visited{
@@ -221,6 +222,7 @@ a.fourofourctaheader:active, a.fourofourctaheader:link, a.fourofourctaheader:vis
 }
 a.fourofourctaheader:hover{
     background-color: var(--cta-color);
+    border: var(--cta-color) 1px solid;
 }
 /* end index header */
 /* section 1 */
@@ -694,6 +696,20 @@ header.about{
 }
 .phototext img{
     border-radius: 24px;
+}
+.phototext div{
+    width: 309px;
+}
+.phototext div a:link, .phototext div a:visited, .phototext div a:active{
+    text-decoration: none;
+    color: var(--white-color);
+    border: white 1px solid;
+    padding: 12px 24px;
+    border-radius: 8px;
+}
+.phototext div a:hover{
+    background-color: var(--cta-color);
+    border: var(--cta-color) 1px solid;
 }
 /* media query for screens with smaller height than 660px */
 /* landscape */
