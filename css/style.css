@@ -55,7 +55,7 @@ body{
     background-color: var(--white-color);
     color: var(--black-color);
     font-family: 'poppins-extralight', sans-serif ;
-    font-size: 1.2rem;
+    font-size: 16px;
     margin: 0px;
     box-sizing: border-box;
 }
@@ -684,6 +684,8 @@ label.footerlabel{
 .aboutblock3{
     height: 748px;
     margin-bottom: 48px;
+    padding-top: 60px;
+    padding-left: 48px;
 }
 header.about{
     height: 300px;
@@ -691,14 +693,40 @@ header.about{
 .phototext{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    column-gap: 24px;
+    grid-template-rows: 262px 1fr;
+    justify-content: center;
+    align-items: start;
+    column-gap: 28px;
 }
 .phototext img{
     border-radius: 24px;
 }
 .phototext div{
-    width: 309px;
+    width: 330px;
+    display: grid;
+    grid-template-rows: auto auto 200px auto;
+}
+.phototext div h3{
+    margin-bottom: 8px;
+}
+.phototext p{
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+.phototext div a.email:link, .phototext div a.email:visited, .phototext div a.email:active{
+    border: 0;
+    background-color: transparent;
+    color: var(--white-color);
+    margin:0;
+    font-family: 'poppins-extralight', sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin-bottom: 12px;
+}
+.phototext div a.email:hover{
+    border-bottom: 1px var(--white-color) solid;
+    border-radius: 0;
+    margin-bottom: 11px;
 }
 .phototext div a:link, .phototext div a:visited, .phototext div a:active{
     text-decoration: none;
@@ -706,6 +734,7 @@ header.about{
     border: white 1px solid;
     padding: 12px 24px;
     border-radius: 8px;
+    width: 151px;
 }
 .phototext div a:hover{
     background-color: var(--cta-color);
