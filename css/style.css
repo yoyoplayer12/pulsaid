@@ -686,7 +686,15 @@ label.footerlabel{
 header.about{
     height: 300px;
 }
-
+.phototext{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 24px;
+}
+.phototext img{
+    border-radius: 24px;
+}
 /* media query for screens with smaller height than 660px */
 /* landscape */
 @media screen and (max-height: 660px) {
