@@ -114,9 +114,9 @@ header div p{
 .visualmobile{
     display: none;
 }
-.indexvisualpic{
+.indexvisualgraphic{
     position: fixed;
-    top: 110px;
+    top: 130px;
     left: 65vw;
     border-radius: 24px;
 }
@@ -797,7 +797,7 @@ header.work{
     .indexvisual{
         height: 660px;
     }
-    .indexvisualpic{
+    .indexvisualgraphic{
         display: none;
     }
     .indexvisualmasked{
@@ -806,10 +806,10 @@ header.work{
 }
 /* fix header pic index */
 @media screen and (max-width: 1280px){
-    .indexvisualpic{
+    .indexvisualgraphic{
         display: block;
         position: absolute;
-        top: 110px;
+        top: 130px;
         left: auto;
         right: 45px;
         border-radius: 24px;
@@ -842,13 +842,13 @@ header.work{
 }
 /* smoll ipad */
 @media screen and (max-width: 950px){
-    .indexvisualpic{
+    .indexvisualgraphic{
         display: none;
     }   
 }
 /*fix index visualpic*/
 @media all and (min-width: 1600px) {
-    .indexvisualpic{
+    .indexvisualgraphic{
         left: 1150px;
     }
 }
