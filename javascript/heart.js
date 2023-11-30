@@ -16,7 +16,16 @@ var canvas = document.querySelector('.indexvisualgraphic');
 var renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true });
 renderer.setSize(canvas.clientWidth, canvas.clientHeight);
 
+var path = 'models/cubemap/'; // Replace with the path to your cube map
+var format = '.png'; // Replace with the format of your cube map images
+var urls = [
+    path + 'px' + format, path + 'nx' + format,
+    path + 'py' + format, path + 'ny' + format,
+    path + 'pz' + format, path + 'nz' + format
+];
 
+var loader = new THREE.CubeTextureLoader();
+var textureCube = loader.load(urls);
 
 let heart;
 //import gltf
@@ -32,7 +41,8 @@ loader.load(
             if (o.isMesh) {
                 o.material = new THREE.MeshPhongMaterial({
                     color: 0xff0000, // Change to the color you want
-                    shininess: 10 // Change to the shininess you want
+                    reflectivity : 0.5, // Change to the reflectivity you want
+                    envMap: textureCube // Apply the cube map
                 });
             }
         });
@@ -41,7 +51,7 @@ loader.load(
     console.error(error);
 });
 //import light
-var light = new THREE.PointLight(0xffffff, 200, 40);
+var light = new THREE.PointLight(0xffffff, 300, 40);
 light.position.set(0, 0, 10);
 scene.add(light);
 
@@ -63,7 +73,7 @@ function animate() {
     if (heart) {
         heart.scale.z = 0.3 + Math.sin(Date.now() * radiansPerMillisecond)/20;
         heart.scale.x = 0.3 + Math.sin(Date.now() * radiansPerMillisecond)/100;
-        heart.rotation.y += 0.01;
+        heart.rotation.y += 0.005;
     }
     // Render the scene
     renderer.render(scene, camera);
