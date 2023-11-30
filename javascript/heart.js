@@ -25,9 +25,9 @@ loader.load(
     'models/heart.glb',
     function (gltf) {
         heart = gltf.scene;
-        heart.scale.set(5, 5, 5);
-        heart.position.set(0, 0, 0);
-        heart.rotation.set(0, 1.6, 0);
+        heart.scale.set(0.3, 0.3, 0.3);
+        heart.position.set(0.2, -1, 0);
+        heart.rotation.set(0, 0, 0);
         heart.traverse((o) => {
             if (o.isMesh) {
                 o.material = new THREE.MeshPhongMaterial({
@@ -61,7 +61,9 @@ function animate() {
     // Rotate the cube
     // heart beat
     if (heart) {
-        heart.scale.x = 5 + Math.sin(Date.now() * radiansPerMillisecond);
+        heart.scale.z = 0.3 + Math.sin(Date.now() * radiansPerMillisecond)/20;
+        heart.scale.x = 0.3 + Math.sin(Date.now() * radiansPerMillisecond)/100;
+        heart.rotation.y += 0.01;
     }
     // Render the scene
     renderer.render(scene, camera);
