@@ -734,7 +734,7 @@ header.about{
     border: white 1px solid;
     padding: 12px 24px;
     border-radius: 8px;
-    width: 151px;
+    width: fit-content;
 }
 .phototext div a:hover{
     background-color: var(--cta-color);
