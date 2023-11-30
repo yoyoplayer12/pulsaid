@@ -27,7 +27,7 @@ loader.load(
         heart = gltf.scene;
         heart.scale.set(5, 5, 5);
         heart.position.set(0, 0, 0);
-        heart.rotation.set(0, 2, 0);
+        heart.rotation.set(0, 1.6, 0);
         heart.traverse((o) => {
             if (o.isMesh) {
                 o.material = new THREE.MeshPhongMaterial({
