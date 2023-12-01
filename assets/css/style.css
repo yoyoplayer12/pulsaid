@@ -177,6 +177,8 @@ nav ul.left li:first-child img{
 }
 li.language:hover{
     cursor: pointer;
+    border: var(--cta-color) 2px solid;
+    padding: 13px;
 }
 nav ul li a{
     text-decoration: none;
