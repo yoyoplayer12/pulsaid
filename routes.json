@@ -1,24 +1,33 @@
 {
-    "routes": [
-      {
-        "route": "/.well-known/**",
-        "statusCode": 404,
-        "allowedRoles": ["anonymous"]
-      },
-      {
-        "route": "/api/**",
-        "allowedRoles": ["anonymous"]
-      },
-      {
-        "route": "/",
-        "serve": "index.html",
-        "statusCode": 200
-      },
-      {
-        "route": "/**",
-        "serve": "404.html",
-        "statusCode": 404
-      }
-    ]
-  }
-  
+  "routes": [
+    {
+      "route": "/.well-known/**",
+      "statusCode": 404,
+      "allowedRoles": ["anonymous"]
+    },
+    {
+      "route": "/api/**",
+      "allowedRoles": ["anonymous"]
+    },
+    {
+      "route": "/en/**",
+      "serve": "/en/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/nl/**",
+      "serve": "/nl/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/",
+      "serve": "/en/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/**",
+      "serve": "404.html",
+      "statusCode": 404
+    }
+  ]
+}
