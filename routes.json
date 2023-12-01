@@ -6,13 +6,13 @@
         "allowedRoles": ["anonymous"]
       },
       {
+        "route": "/api/**",
+        "allowedRoles": ["anonymous"]
+      },
+      {
         "route": "/**",
         "serve": "404.html",
         "statusCode": 404
-      },
-      {
-        "route": "/api/**",
-        "allowedRoles": ["anonymous"]
       },
       {
         "route": "/",
