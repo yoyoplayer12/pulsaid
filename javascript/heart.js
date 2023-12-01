@@ -31,7 +31,7 @@ let heart;
 //import gltf
 var loader = new GLTFLoader();
 loader.load(
-    'https://pulsaid.blob.core.windows.net/models/heart.glb',
+    'models/heart.glb',
     function (gltf) {
         heart = gltf.scene;
         heart.scale.set(0.3, 0.3, 0.3);
