@@ -7,10 +7,9 @@ pool:
 steps:
 - checkout: self
   submodules: true
-
 - task: AzureStaticWebApp@0
   inputs:
-    app_location: "/en" # set this to the directory that contains your default index.html
+    app_location: "/en/" # set this to the directory that contains your default index.html
     api_location: "api" # set this to the location of your API, if you have one
     output_location: "build" # set this to the location of your built app, if your app requires a build step
   env:
