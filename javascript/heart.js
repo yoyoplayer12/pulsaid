@@ -41,7 +41,7 @@ loader.load(
             if (o.isMesh) {
                 o.material = new THREE.MeshPhongMaterial({
                     color: 0xff0000, // Change to the color you want
-                    reflectivity : 0.5, // Change to the reflectivity you want
+                    reflectivity : 0.25, // Change to the reflectivity you want
                     envMap: textureCube // Apply the cube map
                 });
             }
