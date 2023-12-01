@@ -30,6 +30,11 @@
     <meta property="twitter:image" content="" />
     <script>
         let value = localStorage.getItem('language');
+        window.onload = function() {
+            if (lang) {
+                document.documentElement.lang = value;
+            }
+        };
         document.getElementById('language').innerHTML += value;
         console.log(value);
     </script>
