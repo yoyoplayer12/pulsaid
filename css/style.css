@@ -450,7 +450,7 @@ label.footerlabel{
     height: 20px;
     background-color: transparent;
     border: 0;
-    background-image: url("https://portfolionew.blob.core.windows.net/pulsaid/icons/sendarrow.svg?sp=r&st=2023-11-06T12:27:29Z&se=2030-03-07T20:27:29Z&spr=https&sv=2022-11-02&sr=c&sig=8Rm7dlc%2F%2BmJsqeFwO8JzpZAZ8W3U%2B6NKiyt8gR1Jr20%3D");
+    background-image: url("https://pulsaid.blob.core.windows.net/icons/sendarrow.svg");
     cursor: pointer;
 }
 .footer1 h3{
