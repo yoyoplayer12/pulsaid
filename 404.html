@@ -30,14 +30,21 @@
     <meta property="twitter:image" content="" />
     
     <!-- fix language -->
-    <script>
+    <script defer>
         let value = localStorage.getItem('language');
-        window.onload = function() {
-            if (value) {
-                document.documentElement.lang = value;
+
+        $(document).ready(function() {
+            var currentLanguage = $('html').attr('lang');
+            if (value == 'en') {
+                $('html').attr('lang', 'en');
+                console.log('en');
+            } else {
+                $('html').attr('lang', 'nl');
+                console.log('nl');
             }
-        };
-        document.getElementById('language').innerHTML += value;
+        });
+
+        document.querySelector('.language').innerHTML += value;
         console.log(value);
     </script>
     <title>PulsAid - Home</title>
