@@ -28,26 +28,6 @@
     <meta property="twitter:description"
         content="Providing faster assistance to people with heart failure, therefor increasing chances of survival." />
     <meta property="twitter:image" content="" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
-    
-    <!-- fix language -->
-    <script defer>
-        let value = localStorage.getItem('language');
-
-        $(document).ready(function() {
-            var currentLanguage = $('html').attr('lang');
-            if (value == 'en') {
-                $('html').attr('lang', 'en');
-                console.log('en');
-            } else {
-                $('html').attr('lang', 'nl');
-                console.log('nl');
-            }
-        });
-
-        document.querySelector('.language').innerHTML += value;
-        console.log(value);
-    </script>
     <title>PulsAid - Home</title>
 
     <!-- track stuff -->
