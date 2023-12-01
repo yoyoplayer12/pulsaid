@@ -21,12 +21,22 @@
     },
     {
       "route": "/",
-      "serve": "/en/index.html",
+      "serve": "/index.html",
       "statusCode": 200
     },
     {
+      "route": "/en/*",
+      "serve": "/en/404.html",
+      "statusCode": 404
+    },
+    {
+      "route": "/nl/*",
+      "serve": "/nl/404.html",
+      "statusCode": 404
+    },
+    {
       "route": "/**",
-      "serve": "404.html",
+      "serve": "/en/404.html",
       "statusCode": 404
     }
   ]
