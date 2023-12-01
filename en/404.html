@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="icon" href="" type="image/x-icon" />
 
     <meta name="application-name" content="PulsAid">
@@ -15,9 +15,9 @@
     <meta name="author" content="Lindsay Peeters, Evelien Vanophalvens, Yorick Devleeschouwer">
     <!-- open graphs -->
     <meta property="og:type" content="website" />
-    <meta property="og:secure_url" content="https://www.pulsaid.be/howitworks" />
-    <meta property="og:url" content="http://www.pulsaid.be/howitworks" />
-    <meta property="og:title" content="Pulsaid | How it works..." />
+    <meta property="og:secure_url" content="https://www.pulsaid.be" />
+    <meta property="og:url" content="http://www.pulsaid.be" />
+    <meta property="og:title" content="Pulsaid | civilians helping civilians" />
     <meta property="og:description"
         content="Providing faster assistance to people with heart failure, therefor increasing chances of survival." />
     <meta property="og:image" content="" />
@@ -26,11 +26,11 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:site" content="pulsaid.be" />
-    <meta property="twitter:title" content="Pulsaid | How it works..." />
+    <meta property="twitter:title" content="Pulsaid | civilians helping civilians" />
     <meta property="twitter:description"
         content="Providing faster assistance to people with heart failure, therefor increasing chances of survival." />
     <meta property="twitter:image" content="" />
-    <title>PulsAid - How it works</title>
+    <title>PulsAid - Home</title>
 
     <!-- track stuff -->
 
@@ -58,13 +58,13 @@
 </head>
 
 <body>
-    <header class="work">
+    <header>
         <nav>
             <ul class="left">
                 <li><img src="https://placehold.co/90" alt="Placeholder logo"></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a class="active" href="howitworks.html">How it works</a></li>
+                <li><a href="howitworks.html">How it works</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <ul class="right">
@@ -77,40 +77,14 @@
             <img src="https://pulsaid.blob.core.windows.net/photos/maskhomemobile.svg"
             class="visualmobile" alt="">
         </div>
-        <div class="justheadercontent">
-            <h1>Hoe PulsAid werkt</h1>
+        <div class="headercontent404">
+            <h1 class="pulsate">404</h1>
+            <p>Hier lijkt iets onregelmatig te kloppen</p>
+            <div class="headerctas404">
+                <a href="index.html" class="fourofourctaheader">Jump (to) Start</a>
+            </div>
         </div>
     </header>
-    <section class="work">
-        <div class="workblock1">
-            <div class="work1div">
-                <h2>Stap 1: Krijg een melding</h2>
-                <p>Zodra een noodgeval zich voordoet, zorgen wij ervoor dat jij direct op de hoogte bent. Door onze geavanceerde meldingssystemen ontvang je snel en nauwkeurig informatie over de situatie. Stap 1 is essentieel voor een snelle en effectieve reactie, we staan dus klaar om jou de informatie te bieden die je nodig hebt om in actie te komen en een verschil te maken. Samen zorgen we voor een veiligere gemeenschap, stap voor stap.</p>
-            </div>
-            <div class="work1img">
-                <img src="https://placehold.co/310x262" alt="Placeholder logo">
-            </div>
-            
-        </div>
-        <div class="workblock1">
-            <div class="work1div">
-                <h2>Stap 2: Vind een AED</h2>
-                <p>Zodra je de melding hebt ontvangen, helpen we je bij het vinden van de dichtstbijzijnde Automatische Externe Defibrillator (AED). Deze cruciale stap vergroot de kans op een succesvolle reanimatie aanzienlijk. Onze app gidst je moeiteloos naar de locatie van de AED, waardoor je snel kunt handelen en levens kunt redden. Bij stap 2 zetten we de kracht van technologie in om ervoor te zorgen dat hulp binnen handbereik is wanneer elke seconde telt.</p>
-            </div>
-            <div class="work1img">
-                <img src="https://placehold.co/310x262" alt="Placeholder logo">
-            </div>
-        </div>
-        <div class="workblock1">
-            <div class="work1img">
-                <img src="https://placehold.co/310x262" alt="Placeholder logo">
-            </div>
-            <div class="work1div">
-                <h2>Stap 3: Na reanimatie</h2>
-                <p>Na de intense ervaring van reanimatie begrijpen we dat emotionele ondersteuning cruciaal is. Onze app reikt verder dan de fysieke handelingen en biedt ook hulp voor de emotionele impact. Stap 3 richt zich op het verstrekken van geruststelling, begeleiding en hulpmiddelen voor degenen die betrokken waren bij de reanimatie. Samen werken we aan het herstel van welzijn en veerkracht, waardoor degenen die hebben geholpen zich gesteund voelen op zowel fysiek als emotioneel niveau. In moeilijke momenten staan we zij aan zij, van reanimatie tot emotioneel herstel.</p>
-            </div>
-        </div>
-    </section>
     <footer class="footer">
         <div class="footer1">
             <h3>Don't miss a beat!</h3>
@@ -137,6 +111,7 @@
             <div class="footnav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="howitworks.html">How it works</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -172,3 +147,13 @@
 <!-- End Google Tag Manager (noscript) -->
 
 </html>
+<script>
+    var link = document.querySelector('a.fourofourctaheader');
+    link.addEventListener('mouseover', function () {
+        this.textContent = 'Jump Start'; // Replace 'New Text' with the text you want to display on hover
+    });
+
+    link.addEventListener('mouseout', function () {
+        this.textContent = 'Jump (to) Start'; // Replace 'Original Text' with the original text of the link
+    });
+</script>
