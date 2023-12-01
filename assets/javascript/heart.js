@@ -16,7 +16,7 @@ var canvas = document.querySelector('.indexvisualgraphic');
 var renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true });
 renderer.setSize(canvas.clientWidth, canvas.clientHeight);
 
-var path = 'models/cubemap/'; // Replace with the path to your cube map
+var path = '../assets/models/cubemap/'; // Replace with the path to your cube map
 var format = '.png'; // Replace with the format of your cube map images
 var urls = [
     path + 'px' + format, path + 'nx' + format,
@@ -31,7 +31,7 @@ let heart;
 //import gltf
 var loader = new GLTFLoader();
 loader.load(
-    'models/heart.glb',
+    '../assets/models/heart.glb',
     function (gltf) {
         heart = gltf.scene;
         heart.scale.set(0.3, 0.3, 0.3);
