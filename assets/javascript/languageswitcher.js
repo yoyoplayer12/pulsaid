@@ -8,5 +8,5 @@ $('.language').click(function() {
         $('html').attr('lang', 'en');
         newLanguage = 'en';
     }
-    window.location.href = `https://www.pulsaid.be/${newLanguage}/`;
+    window.location.href = `https://www.pulsaid.be/${newLanguage}/index.html`;
 });
