@@ -28,10 +28,12 @@
     <meta property="twitter:description"
         content="Providing faster assistance to people with heart failure, therefor increasing chances of survival." />
     <meta property="twitter:image" content="" />
+    
+    <!-- fix language -->
     <script>
         let value = localStorage.getItem('language');
         window.onload = function() {
-            if (lang) {
+            if (value) {
                 document.documentElement.lang = value;
             }
         };
