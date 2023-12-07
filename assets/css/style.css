@@ -616,6 +616,11 @@ label.footerlabel{
     100% { transform: scale(1); }
 }
 /* about */
+.phototext img{
+    width: 310px;
+    height: 262px;
+    object-fit: cover;
+}
 .about .aboutblock1, .about .aboutblock2, .about .aboutblock3{
     width: auto;
     margin-bottom: 24px;
