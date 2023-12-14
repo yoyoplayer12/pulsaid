@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /assets/css/
+Dissalow: /assets/javascript/
+Dissalow: /assets/fonts/
+Dissalow /assets/models/
+Dissalow: /assets/old/
+Disallow: /fonts/
+Allow: /nl/
+Allow: /en/
+Allow: index.html
+Allow: 404.html
