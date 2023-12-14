@@ -855,6 +855,9 @@ header.work{
 header.contact{
     height: 300px;
 }
+a.no-underline:hover{
+    border-bottom: none;
+}
 
 /* media query for screens with smaller height than 660px */
 /* landscape */
