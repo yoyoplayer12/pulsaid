@@ -145,9 +145,6 @@ nav ul.right{
 nav ul.rightmobile{
     display: none;
 }
-nav ul.rightmobilewhite{
-    display: none;
-}
 nav ul.leftmobile{
     display: none;
 }
@@ -1207,6 +1204,7 @@ a.no-underline:hover{
         display: none;
     }
     nav ul.rightmobile{
+        color: var(--black-color);
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -1274,14 +1272,7 @@ a.no-underline:hover{
         position: absolute;
     }
     nav ul.rightmobile{
-        display: none;
-    }
-    nav ul.rightmobilewhite{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        height: 100%;
-        padding-right: 70px;
+        color: var(--white-color);
     }
 }
 
