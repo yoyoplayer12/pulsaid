@@ -422,9 +422,6 @@ footer{
     margin-left: 64px;
     margin-top: 64px;
 }
-.footer1 img{
-    border-radius: 8px;
-}
 .footer1 form{
     height: 70px;
 }
@@ -476,9 +473,14 @@ label.footerlabel{
     grid-row: 1;
     grid-column: 2;
     margin-top: 64px;
+    height: 264px;
+    width: 440px;
 }
 .footer3 img{
     border-radius: 24px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .footer4{
     display: grid;
@@ -551,11 +553,17 @@ label.footerlabel{
     align-items: flex-start;
     margin-left: 36px;
 }
+.section-1 .block4 .block4div h3{
+    color: var(--main-color);
+}
 /* section 2 */
 .section-2 .block2 .block2div{
     margin-left: 34px;
     margin-top: 32px;
     width: 302px;
+}
+.section-2 .block2 .block2div h3{
+    color: var(--main-color);
 }
 .section-2 .block3 .block3div{
     height: 152px;
@@ -959,14 +967,235 @@ a.no-underline:hover{
         object-fit: cover;
         object-position: center;
     }
-
-
-
-
-
-
-
     /* end section 1 */
+    /* section 2 */
+    .section-2{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        width: 90vw;
+        margin-left: 5vw;
+    }
+    .section-2 .block1{
+        grid-row: 3;
+        grid-column: 1;
+        height: 311px;
+        width: 90vw;
+        overflow: hidden;
+    }
+    .section-2 .block1img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .section-2 .block2{
+        grid-row: 1;
+        grid-column: 1;
+        width: 90vw;
+        height: auto;
+    }
+    .section-2 .block2 .block2div{
+        margin-left: auto;
+        margin-right: auto;
+        width: 70vw;
+        margin-bottom: 40px;
+    }
+    .section-2 .block3{
+        display: grid;
+        grid-template-rows: none;
+        grid-row: 2;
+        grid-column: 1;
+        width: 90vw;
+        height: 212px;
+        border-radius: 24px;
+    }
+    .section-2 .block3 .block3div{
+        width: auto;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section-2 .block3 .block3div p, .section-2 .block3 .block3div h2{
+        margin-left: 0;
+        text-align: left;
+        width: auto;
+    }
+    .section-2 .block4{
+        grid-row: 4;
+        grid-column: 1;
+        width: 90vw;
+        height: auto;
+    }
+    .section-2 .block4 .block4div{
+        margin-bottom: 40px;
+    }
+    .section-2 .block4 .block4div h3{
+        color: var(--main-color);
+    }
+    .section-2 .block4 .block4div p{
+        width: 70vw;
+        word-wrap: break-word;
+    }
+    .section-2 .block5{
+        grid-row: 5;
+        grid-column: 1;
+        width: 90vw;
+        height: auto;
+    }
+    .section-2 .block5 .block5div{
+        margin-bottom: 40px;
+    }
+    .section-2 .block5 .block5div h3{
+        color: var(--main-color);
+    }
+    .section-2 .block5 .block5div p{
+        width: 70vw;
+        word-wrap: break-word;
+    }
+    /* end section 2 */
+    /* section 3 */
+    .section-3{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        width: 90vw;
+        margin-left: 5vw;
+    }
+    .section-3 .block1{
+        grid-row: 1;
+        grid-column: 1;
+        width: 90vw;
+        height: auto;
+    }
+    .section-3 .block1 .block1div{
+        margin-left: auto;
+        margin-right: auto;
+        width: 70vw;
+        margin-bottom: 40px;
+    }
+    .section-3 .block1 .block1div h3{
+        color: var(--main-color);
+    }
+    .section-3 .block2{
+        grid-row: 2;
+        grid-column: 1;
+        width: 90vw;
+        height: auto;
+    }
+    .section-3 .block2 .block2div{
+        margin-left: auto;
+        margin-right: auto;
+        width: 70vw;
+        margin-bottom: 40px;
+    }
+    .section-3 .block2 .block2div h3{
+        color: var(--main-color);
+    }
+    .section-3 .block3{
+        grid-row: 3;
+        grid-column: 1;
+        width: 90vw;
+        height: auto;
+    }
+    .section-3 .block3 .block3div{
+        margin-left: auto;
+        margin-right: auto;
+        width: 70vw;
+        margin-bottom: 40px;
+    }
+    .section-3 .block3 .block3div h3{
+        color: var(--main-color);
+    }
+    /* end section 3 */
+    /* footer */
+    footer{
+        height: auto;
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr;
+    }
+    .footer1{
+        margin-top: 32px;
+        margin-left: 40px;
+        display: grid;
+        grid-template-rows: 50px 70px 100px;
+        row-gap: 20px;
+        grid-row: 1;
+        grid-column: 1;
+    }
+    label.footerlabel{
+        left: 56px;
+    }
+    .mailchimpfoot{
+        left: 506px;
+    }
+    .footer2{
+        grid-row: 2;
+        grid-column: 1;
+        margin-left: 5vw;
+        margin-top: 0;
+        margin-bottom: 40px;
+        width: 90vw;
+    }
+    .footer2 p{
+        text-align: center;
+    }
+    .footer3{
+        grid-row: 3;
+        grid-column: 1;
+        margin-top: 0;
+        width: 90vw;
+        margin-left: 5vw;
+    }
+    .footer3 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    .footer4{
+        grid-row: 4;
+        grid-column: 1;
+        margin-top: 20px;
+    }
+    .footer4 .footnav{
+        grid-column: 1;
+        margin-left: 20px;
+    }
+    .footer4 .footcontact{
+        grid-column: 2;
+    }
+    .footer4 .footcontact ul li h3{
+        margin-top: 0;
+        margin-bottom: 12px;
+    }
+    .footcontact .footsocials{
+        margin-top: 18px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .footcontact .footsocials img{
+        margin-left: 0;
+    }
+    /* end footer */
+}
+
+@media screen and (max-width: 600px){
+    .footer1 form input{
+        width: 70vw;
+    }
+    .mailchimpfoot{
+        position: absolute;
+        left: auto;
+        right: 20vw;
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+        border: 0;
+        background-image: url("https://pulsaid.blob.core.windows.net/icons/sendarrow.svg");
+        cursor: pointer;
+    }
 }
 
 /* ipad */
