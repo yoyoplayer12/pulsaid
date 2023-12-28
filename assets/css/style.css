@@ -1034,6 +1034,7 @@ a.no-underline:hover{
     }
     .indexvisual{
         width: 101vw;
+        position: absolute;
     }
     nav ul.rightmobile{
         display: none;
