@@ -1133,9 +1133,13 @@ a.no-underline:hover{
     .footer2{
         grid-row: 2;
         grid-column: 1;
-        margin-left: 64px;
-        margin-top: 48px;
+        margin-left: 5vw;
+        margin-top: 0;
+        margin-bottom: 40px;
         width: 90vw;
+    }
+    .footer2 p{
+        text-align: center;
     }
     .footer3{
         grid-row: 3;
@@ -1149,6 +1153,7 @@ a.no-underline:hover{
         height: 100%;
         object-fit: cover;
     }
+
 
     .footer4{
         display: grid;
