@@ -165,4 +165,16 @@
     link.addEventListener('mouseout', function () {
         this.textContent = 'Jump (to) Start'; // Replace 'Original Text' with the original text of the link
     });
+    document.querySelector('.hamburger').addEventListener('click', function() {
+        var menu = document.querySelector('.menu');
+        if (menu.style.display === 'none') {
+            menu.style.display = 'block';
+        } else {
+            menu.style.display = 'none';
+        }
+    });
+    document.querySelector('.cross').addEventListener('click', function() {
+        var menu = document.querySelector('.menu');
+        menu.style.display = 'none';
+    });
 </script>
