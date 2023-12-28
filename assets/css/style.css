@@ -1258,8 +1258,16 @@ a.no-underline:hover{
         word-wrap: break-word;
         margin-bottom: 40px;
     }
+    .headerctas{
+        width: 180px;
+        display: block;
+    }
     .donatectaheader{
         display: none;
+    }
+    .contactctaheader{
+        display: block;
+        width: 180px;
     }
     .indexvisual{
         width: 101vw;
