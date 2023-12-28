@@ -89,6 +89,9 @@ q{
     margin-top: 74px;
 }
 /* index header */
+.indexp{
+    margin-bottom: 20px;
+}
 header{
     height: 100vh;
 }
@@ -103,8 +106,8 @@ header div p{
     height: 101vh;
     width: 80vw;
     background-color: var(--secondary-color);
-    border-radius: 0 0 250px 0;
-    min-width: 1105px;
+    border-radius: 0 0 150px 0;
+    /* min-width: 1105px; */
     max-width: 1280px;
     position: fixed;
     top: 0;
@@ -152,6 +155,15 @@ nav ul.right{
     align-items: center;
     height: 100%;
     padding-right: 70px;
+}
+nav ul.rightmobile{
+    display: none;
+}
+nav ul.leftmobile{
+    display: none;
+}
+nav ul.leftmobilelogo{
+    display: none;
 }
 nav ul li{
     padding: 0px 20px;
@@ -859,64 +871,89 @@ a.no-underline:hover{
     border-bottom: none;
 }
 
-/* media query for screens with smaller height than 660px */
-/* landscape */
-@media screen and (max-height: 660px) {
-    header{
-        height: fit-content;
-    }
-    .indexvisual{
-        height: 660px;
-    }
-    .indexvisualgraphic{
+/* smaller pc */
+@media screen and (max-width: 1300px){
+    .indexvisualmasked{
         display: none;
     }
-    .indexvisualmasked{
-        height: 660px;
-    }
 }
-/* fix header pic index */
-@media screen and (max-width: 1280px){
-    .indexvisualgraphic{
-        display: block;
-        position: absolute;
-        top: 130px;
-        left: auto;
-        right: 45px;
-        border-radius: 24px;
-    }
-}
+
 /* ipad */
-@media screen and (max-width: 1100px) {
-    .indexvisual{
-        display: none;
-    }
-    .visualmobile{
-        display: block;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        width: auto;
-    }
-    .indexvisualmasked{
-        display: block;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        width: auto;
-    }
-    
-}
-/* smoll ipad */
-@media screen and (max-width: 950px){
+@media screen and (max-width: 1000px){
     .indexvisualgraphic{
         display: none;
-    }   
+    }
+    nav ul.right{
+        display: none;
+    }
+    nav ul.rightmobile{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        padding-right: 70px;
+    }
+    nav ul.left{
+        display: none;
+    }
+    nav ul.leftmobile{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0;
+        height: 100%;
+    }
+    .donate{
+        position: absolute;
+        right: 200px;
+        top: 20px;
+        list-style-type: none;
+    }
+    .hamburger{
+        position: absolute;
+        right: 30px;
+        top: 20px;
+    }
+    nav ul.leftmobilelogo{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0;
+        height: 100%;
+    }
+    .leftmobilelogo{
+        list-style-type: none;
+        margin-bottom: 100px;
+    }
+    .mobilelogo{
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
 }
+/* phone */
+@media screen and (max-width: 650px){
+    .indexp{
+        max-width: 70vw;
+        word-wrap: break-word;
+        margin-bottom: 40px;
+    }
+    .donatectaheader{
+        display: none;
+    }
+    .indexvisual{
+        width: 101vw;
+    }
+}
+
+/* donate dissapear */
+@media screen and (max-width: 440px ){
+    .donate{
+        display: none;
+    }
+}
+
+
 /*fix index visualpic*/
 @media all and (min-width: 1600px) {
     .indexvisualgraphic{
