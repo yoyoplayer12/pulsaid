@@ -89,14 +89,14 @@
                 <li class="language">NL</li>
             </ul>
             <ul class="rightmobile">
-                <div class="hamburger">
-                    <p style="color: black;">menu</p>
-                </div>
-            </ul>
-            <ul class="rightmobilewhite">
-                <div class="hamburger">
-                    <p style="color: white;">menu</p>
-                </div>
+                <div class="hamburger">&#9776;</div>
+                <ul class="menu">
+                    <li><a class="no-underline" href="index.html"><img src="https://pulsaid.blob.core.windows.net/icons/logo/icon_white.png" height="40" style="margin-top: 10px;" alt="Pulsaid logo"></a></li>
+                    <li class="cross">&times;</li>
+                    <li><a href="about.html">Over ons</a></li>
+                    <li><a href="howitworks.html">Hoe we werken</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </ul>
         </nav>
         <div class="indexvisualcolumns">
@@ -270,5 +270,17 @@
             scale = Math.max(scale, 0); // Prevent the image from getting too small
             document.querySelector('.indexvisualgraphic').style.transform = 'translateY(' + scrollPosition * 0.7 + 'px) scale(' + scale + ')';
         }
+    });
+    document.querySelector('.hamburger').addEventListener('click', function() {
+        var menu = document.querySelector('.menu');
+        if (menu.style.display === 'none') {
+            menu.style.display = 'block';
+        } else {
+            menu.style.display = 'none';
+        }
+    });
+    document.querySelector('.cross').addEventListener('click', function() {
+        var menu = document.querySelector('.menu');
+        menu.style.display = 'none';
     });
 </script>

@@ -145,9 +145,6 @@ nav ul.right{
 nav ul.rightmobile{
     display: none;
 }
-nav ul.rightmobilewhite{
-    display: none;
-}
 nav ul.leftmobile{
     display: none;
 }
@@ -878,6 +875,36 @@ header.contact{
 a.no-underline:hover{
     border-bottom: none;
 }
+/* hamburgermenu */
+.hamburger {
+    cursor: pointer;
+}
+ul.menu {
+    display: none;
+    position: absolute;
+    background-color: #6F79B9;
+    width: 101vw;
+    left: 0;
+    top: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 0 0 95px 0;
+    list-style-type: none;
+    padding: 0;
+    padding-bottom: 40px;
+}
+.menu a {
+    color: var(--white-color);
+    padding: 12px 40px;
+    text-decoration: none;
+    display: block;
+}
+.menu .cross{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 20px 20px;
+}
 
 /* smaller pc + blocks in 1 column */
 @media screen and (max-width: 1300px){
@@ -1207,6 +1234,7 @@ a.no-underline:hover{
         display: none;
     }
     nav ul.rightmobile{
+        color: var(--black-color);
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -1274,14 +1302,7 @@ a.no-underline:hover{
         position: absolute;
     }
     nav ul.rightmobile{
-        display: none;
-    }
-    nav ul.rightmobilewhite{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        height: 100%;
-        padding-right: 70px;
+        color: var(--white-color);
     }
 }
 
