@@ -1,3 +1,5 @@
+@import url("https://use.typekit.net/jvl1kge.css");
+
 :root{
     /* main color */
     --main-color: #2D7E7C;
@@ -21,6 +23,7 @@
 }
 
 /* poppins */
+
 
 @font-face {
     font-family: "poppins-extralight";
@@ -60,8 +63,10 @@ body{
     box-sizing: border-box;
 }
 h1{
-    font-family: "comfortaa-bold", sans-serif;
-    font-size: 36px;
+    font-family: 'proxima-soft';
+    font-weight: 800;
+    font-style: normal;
+    font-size: 96px;
     color: var(--white-color);
 }
 h2{
