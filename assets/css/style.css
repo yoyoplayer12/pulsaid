@@ -1156,28 +1156,20 @@ a.no-underline:hover{
 
 
     .footer4{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
         grid-row: 4;
         grid-column: 1;
-        margin-top: 48px;
+        margin-top: 20px;
     }
     .footer4 .footnav{
         grid-column: 1;
+        margin-left: 20px;
     }
     .footer4 .footcontact{
         grid-column: 2;
     }
-    .footer4 .footnav ul{
-        list-style-type: none;
-        padding: 0;
-    }
-    .footer4 .footnav ul li{
-        margin-bottom: 16px;
-    }
-    .footer4 .footcontact ul{
-        list-style-type: none;
-        padding: 0;
+    .footer4 .footcontact ul li h3{
+        margin-top: 0;
+        margin-bottom: 12px;
     }
     .footcontact .footsocials{
         margin-top: 18px;
