@@ -871,11 +871,91 @@ a.no-underline:hover{
     border-bottom: none;
 }
 
-/* smaller pc */
+/* smaller pc + blocks in 1 column */
 @media screen and (max-width: 1300px){
     .indexvisualmasked{
         display: none;
     }
+    /* section 1 */
+    .section-1{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        width: 90vw;
+        margin-left: 5vw;
+        margin-right: auto;
+        margin-top: 60px;
+    }
+    .section-1 .block1{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        width: 90vw;
+        height: 226px;
+        grid-row: 1;
+    }
+    .section-1 .block1 .block1div{
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 35px;
+        height: 226px;
+    }
+
+
+    .section-1 .block2{
+        width: 90vw;
+        height: 268px;
+        border-radius: 24px;
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .section-1 .block2 .block2div{
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+
+
+    .section-1 .block3{
+        width: 90vw;
+        height: 338px;
+        grid-row: 3;
+    }
+    .section-1 .block3 .block3div{
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    
+    .section-1 .block4{
+        width: 90vw;
+        height: 438px;
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .section-1 .block4 .block4div{
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section-1 .block5{
+        height: 438px;
+        width: 324px;
+        grid-column: 1;
+        grid-row: 5;
+    }
+    .section-1 .block5img{
+        border-radius: 24px;
+    }
+
+
+
+
+
+
+
+    /* end section 1 */
 }
 
 /* ipad */
