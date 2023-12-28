@@ -22,69 +22,48 @@
     --black-color: #262626;
 }
 
-/* poppins */
-
-
-@font-face {
-    font-family: "poppins-extralight";
-    src: url(../fonts/Poppins/Poppins-ExtraLight.ttf);
-}
-@font-face {
-    font-family: "poppins-light";
-    src: url(../fonts/Poppins/Poppins-Light.ttf) format('truetype');
-    font-weight: 100;
-    font-style: normal;
-}
-@font-face {
-    font-family: "poppins-regular";
-    src: url(../fonts/Poppins/Poppins-Regular.ttf) format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
-/* comfortaa */
-@font-face {
-    font-family: "comfortaa-bold";
-    src: url(../fonts/Comfortaa/static/Comfortaa-Bold.ttf);
-}
-
-@font-face {
-    font-family: "comfortaa-semibold";
-    src: url(../fonts/Comfortaa/static/Comfortaa-SemiBold.ttf);
-}
-
 /* general */
 body{
     background-color: var(--white-color);
     color: var(--black-color);
-    font-family: 'poppins-extralight', sans-serif ;
+    font-family: proxima-soft, sans-serif;
+    font-weight: 300;
+    font-style: normal;
     font-size: 16px;
     margin: 0px;
     box-sizing: border-box;
 }
 h1{
-    font-family: 'proxima-soft';
+    font-family: proxima-soft, sans-serif ;
     font-weight: 800;
     font-style: normal;
-    font-size: 96px;
+    font-size: 36px;
     color: var(--white-color);
 }
 h2{
-    font-family: "comfortaa-semibold", sans-serif;
-    font-size: 24px;
+    font-family: proxima-soft, sans-serif;
+    font-weight: 700;
+    font-style: normal;;
+    font-size: 26px;
 }
 p{
-    font-family: "poppins-extralight", sans-serif;
+    font-family: proxima-soft, sans-serif;
+    font-weight: 300;
+    font-style: normal;
     font-size: 16px;
     line-height: 1.5;
 }
 h3{
-    font-family: "poppins-light", sans-serif;
+    font-family: proxima-soft, sans-serif;
+    font-weight: 300;
+    font-style: normal;
     font-size: 20px;
     color: var(--white-color);
 }
 q{
-    font-family: "poppins-light", sans-serif;
+    font-family: proxima-soft, sans-serif;
+    font-weight: 500;
+    font-style: normal;
     font-size: 30px;
     color: var(--black-color);
 }
@@ -142,7 +121,9 @@ nav{
     align-items: center;
     color: var(--white-color);
     font-size: 24px;
-    font-family: 'poppins-regular', sans-serif;
+    font-family: proxima-soft, sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 nav ul.left{
     list-style-type: none;
@@ -528,7 +509,9 @@ label.footerlabel{
 /* content */
 .bignumber{
     color: var(--white-color);
-    font-family: "comfortaa-semibold", sans-serif;
+    font-family: proxima-soft, sans-serif;
+    font-weight: 500;
+    font-style: normal;
     font-size: 96px;
     margin: 0;
     line-height: 1;
@@ -608,12 +591,16 @@ label.footerlabel{
 /* 404 */
 .headercontent404 h1{
     font-size: 96px;
-    font-family: 'comfortaa-semibold', sans-serif;
+    font-family: proxima-soft, sans-serif;
+    font-weight: 800;
+    font-style: normal;
     text-align: center;
 }
 .headercontent404 p{
     font-size: 40px;
-    font-family: 'comfortaa-semibold', sans-serif;
+    font-family: proxima-soft, sans-serif;
+    font-weight: 300;
+    font-style: normal;
     text-align: center;
 }
 .headercontent404{
@@ -745,7 +732,9 @@ header.about{
     background-color: transparent;
     color: var(--white-color);
     margin:0;
-    font-family: 'poppins-extralight', sans-serif;
+    font-family: proxima-soft, sans-serif;
+    font-weight: 300;
+    font-style: normal;
     font-size: 16px;
     padding: 0;
     margin-bottom: 12px;
