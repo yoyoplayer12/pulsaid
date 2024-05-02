@@ -2,7 +2,7 @@
 
 :root{
     /* main color */
-    --main-color: #2D7E7C;
+    --main-color: #6F79B9;
     --main-color-light: #51B797;
     /* secondary color */
     --secondary-color: #505CA5;
@@ -49,8 +49,8 @@ h2{
 p{
     font-family: proxima-soft, sans-serif;
     font-weight: 300;
-    font-style: normal;
-    font-size: 16px;
+    font-style: light;
+    font-size: 26px;
     line-height: 1.5;
 }
 h3{
@@ -89,7 +89,7 @@ header div p{
 .indexvisual{
     height: 101vh;
     width: 80vw;
-    background-color: var(--secondary-color);
+    background-color: var(--main-color);
     border-radius: 0 0 150px 0;
     /* min-width: 1105px; */
     max-width: 1280px;
@@ -104,10 +104,12 @@ header div p{
 .indexvisualgraphic{
     background-image: url(https://pulsaid.blob.core.windows.net/photos/heroImage.png);
     background-size: cover;
-    position: fixed;
+    /*position: absolute;*/
     top: 130px;
-    left: 65vw;
+    /*left: 65vw;*/
     border-radius: 24px;
+    width: 500px;
+    height: 500px;
 }
 .indexvisualmasked{
     position: fixed;
@@ -143,6 +145,7 @@ nav ul.right{
     align-items: center;
     height: 100%;
     padding-right: 70px;
+    gap:16px;
 }
 nav ul.rightmobile{
     display: none;
@@ -173,11 +176,14 @@ nav ul.left li:first-child img{
     padding: 15px;
     border-radius: 8px;
     margin-left: 10px;
-    font-size: 16px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 li.language:hover{
     cursor: pointer;
-    border: var(--cta-color) 2px solid;
+    /*border: var(--cta-color) 2px solid;*/
     padding: 13px;
 }
 nav ul li a{
@@ -189,9 +195,14 @@ nav ul li a.active, nav ul li a:hover{
 }
 .headercontentindex{
     margin-left: 64px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 16vw;
+    margin-top: 4vw;
 }
 .headercontentindex p{
-    width: 440px;
+    width: 580px;
 }
 .headerctas{
     width: 380px;
