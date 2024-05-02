@@ -102,7 +102,7 @@ header div p{
     display: none;
 }
 .indexvisualgraphic{
-    background-image: url(/pulsaid/assets/images/heroImage.png);
+    background-image: url(https://pulsaid.blob.core.windows.net/photos/heroImage.png);
     background-size: cover;
     position: fixed;
     top: 130px;
@@ -290,7 +290,7 @@ a.fourofourctaheader:hover{
     grid-column: 3;
     height: 438px;
     width: 324px;
-    background-image: url(/pulsaid/assets/images/CharlotteDepoorter.jpg);
+    background-image: url(https://pulsaid.blob.core.windows.net/photos/CharlotteDepoorter.jpg);
     background-origin: content-box;
     background-size: cover;
 }
@@ -315,7 +315,7 @@ a.fourofourctaheader:hover{
     grid-row: 1 / span 4;
     grid-column: 1;
     width: 380px;
-    background-image:url(/pulsaid/assets/images/onzePartners.jpg);
+    background-image:url(https://pulsaid.blob.core.windows.net/photos/onzePartners.jpg);
     background-origin: content-box;
     background-size: cover;
 }
