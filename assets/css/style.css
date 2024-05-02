@@ -62,9 +62,10 @@ h3{
 }
 q{
     font-family: proxima-soft, sans-serif;
-    font-weight: 500;
+    font-weight: 300;
     font-style: normal;
-    font-size: 30px;
+    font-size: 20px;
+    line-height: 1.5;
     color: var(--black-color);
 }
 .justheadercontent{
@@ -250,7 +251,7 @@ a.fourofourctaheader:hover{
 .section-1{
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: 268px 78px auto auto;
+    grid-template-rows: 307px 438px ;
     column-gap: 24px;
     row-gap: 24px;
     width: 1184px;
@@ -262,7 +263,7 @@ a.fourofourctaheader:hover{
     display: grid;
     grid-template-rows: 91px auto 91px;
     background-color: var(--main-color);
-    grid-row: auto / span 2;
+    grid-row: auto;
     width: 380px;
     height: 307px;
     border-radius: 24px;
@@ -279,31 +280,31 @@ a.fourofourctaheader:hover{
     color: var(--black-color);
 }
 .section-1 .block3{
-    display: grid;
-    grid-template-rows: 112px auto 112px;
-    background-color: var(--main-color);
-    grid-row: auto / span 2;
+    grid-row: 2;
     grid-column: 1;
+    height: 438px;
     width: 380px;
-    height: 338px;
-    border-radius: 24px;
+    background-image: url(https://pulsaid.blob.core.windows.net/photos/CharlotteDepoorter.jpg);
+    background-origin: content-box;
+    background-size: cover;
 }
 .section-1 .block4{
     background-color: var(--gray-color);
     grid-row: 2 / span 3;
     grid-column: 2;
-    width: 428px;
+    width: 378px;
     height: 438px;
     border-radius: 24px;
 }
 .section-1 .block5{
-    grid-row: 2 / span 3;
-    grid-column: 3;
+    background-color: var(--main-color);
+    width: 378px;
     height: 438px;
-    width: 324px;
-    background-image: url(https://pulsaid.blob.core.windows.net/photos/CharlotteDepoorter.jpg);
-    background-origin: content-box;
-    background-size: cover;
+    border-radius: 24px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .section-1 .block5img{
     border-radius: 24px;
@@ -560,21 +561,17 @@ label.footerlabel{
     margin-top: 40px;
     width: 647px;
 }
-.section-1 .block3 .block3div{
-    width: 380px;
-    height: 370px;
-    grid-row: 2;
-}
 .section-1 .block4 .block4div{
-    width: 356px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-left: 36px;
+    gap:24px;
+    padding: 40px;
 }
-.section-1 .block4 .block4div h3{
-    color: var(--main-color);
+.section-1 .block4 .block4div span{
+    font-weight: 400;
+    font-style: italic;
 }
 /* section 2 */
 .section-2 .block2 .block2div{
