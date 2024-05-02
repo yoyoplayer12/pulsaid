@@ -2,7 +2,7 @@
 
 :root{
     /* main color */
-    --main-color: #2D7E7C;
+    --main-color: #6F79B9;
     --main-color-light: #51B797;
     /* secondary color */
     --secondary-color: #505CA5;
@@ -35,22 +35,22 @@ body{
 }
 h1{
     font-family: proxima-soft, sans-serif ;
-    font-weight: 800;
-    font-style: normal;
-    font-size: 36px;
+    font-weight: 600;
+    font-style: bold;
+    font-size: 40px;
     color: var(--white-color);
 }
 h2{
     font-family: proxima-soft, sans-serif;
-    font-weight: 700;
-    font-style: normal;;
-    font-size: 26px;
+    font-weight: 600;
+    font-style: bold;;
+    font-size: 32px;
 }
 p{
     font-family: proxima-soft, sans-serif;
     font-weight: 300;
-    font-style: normal;
-    font-size: 16px;
+    font-style: light;
+    font-size: 20px;
     line-height: 1.5;
 }
 h3{
@@ -62,9 +62,10 @@ h3{
 }
 q{
     font-family: proxima-soft, sans-serif;
-    font-weight: 500;
+    font-weight: 300;
     font-style: normal;
-    font-size: 30px;
+    font-size: 20px;
+    line-height: 1.5;
     color: var(--black-color);
 }
 .justheadercontent{
@@ -89,7 +90,7 @@ header div p{
 .indexvisual{
     height: 101vh;
     width: 80vw;
-    background-color: var(--secondary-color);
+    background-color: var(--main-color);
     border-radius: 0 0 150px 0;
     /* min-width: 1105px; */
     max-width: 1280px;
@@ -104,15 +105,17 @@ header div p{
 .indexvisualgraphic{
     background-image: url(https://pulsaid.blob.core.windows.net/photos/heroImage.png);
     background-size: cover;
-    position: fixed;
+    /*position: absolute;*/
     top: 130px;
-    left: 65vw;
+    /*left: 65vw;*/
     border-radius: 24px;
+    width: 500px;
+    height: 500px;
 }
 .indexvisualmasked{
     position: fixed;
     top: 0;
-    left: 0;
+    left: 64px;
     height: 100vh;
     transition: opacity ease-in-out;
     z-index: -1;
@@ -143,6 +146,7 @@ nav ul.right{
     align-items: center;
     height: 100%;
     padding-right: 70px;
+    gap:16px;
 }
 nav ul.rightmobile{
     display: none;
@@ -173,11 +177,14 @@ nav ul.left li:first-child img{
     padding: 15px;
     border-radius: 8px;
     margin-left: 10px;
-    font-size: 16px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 li.language:hover{
     cursor: pointer;
-    border: var(--cta-color) 2px solid;
+    /*border: var(--cta-color) 2px solid;*/
     padding: 13px;
 }
 nav ul li a{
@@ -189,9 +196,14 @@ nav ul li a.active, nav ul li a:hover{
 }
 .headercontentindex{
     margin-left: 64px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 16vw;
+    margin-top: 4vw;
 }
 .headercontentindex p{
-    width: 440px;
+    width: 580px;
 }
 .headerctas{
     width: 380px;
@@ -239,7 +251,7 @@ a.fourofourctaheader:hover{
 .section-1{
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: 268px 78px auto auto;
+    grid-template-rows: 307px 438px ;
     column-gap: 24px;
     row-gap: 24px;
     width: 1184px;
@@ -249,50 +261,50 @@ a.fourofourctaheader:hover{
 }
 .section-1 .block1{
     display: grid;
-    grid-template-rows: 123px auto 123px;
+    grid-template-rows: 91px auto 91px;
     background-color: var(--main-color);
-    grid-row: auto / span 2;
+    grid-row: auto;
     width: 380px;
-    height: 370px;
+    height: 307px;
     border-radius: 24px;
 }
 .section-1 .block2{
     background-color: var(--gray-color);
-    grid-row: auto / span 1;
+    grid-row: auto;
     width: 780px;
-    height: 268px;
+    height: 307px;
     border-radius: 24px;
-    grid-column: auto / span 2;
+    grid-column: span 2;
 }
 .section-1 .block2 h2{
-    color: var(--main-color);
+    color: var(--black-color);
 }
 .section-1 .block3{
-    display: grid;
-    grid-template-rows: 112px auto 112px;
-    background-color: var(--main-color);
-    grid-row: auto / span 2;
+    grid-row: 2;
     grid-column: 1;
+    height: 438px;
     width: 380px;
-    height: 338px;
-    border-radius: 24px;
+    background-image: url(https://pulsaid.blob.core.windows.net/photos/CharlotteDepoorter.jpg);
+    background-origin: content-box;
+    background-size: cover;
 }
 .section-1 .block4{
     background-color: var(--gray-color);
     grid-row: 2 / span 3;
     grid-column: 2;
-    width: 428px;
+    width: 378px;
     height: 438px;
     border-radius: 24px;
 }
 .section-1 .block5{
-    grid-row: 2 / span 3;
-    grid-column: 3;
+    background-color: var(--main-color);
+    width: 378px;
     height: 438px;
-    width: 324px;
-    background-image: url(https://pulsaid.blob.core.windows.net/photos/CharlotteDepoorter.jpg);
-    background-origin: content-box;
-    background-size: cover;
+    border-radius: 24px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .section-1 .block5img{
     border-radius: 24px;
@@ -339,6 +351,7 @@ a.fourofourctaheader:hover{
     width: 378px;
     height: 268px;
     border-radius: 24px;
+    text-align: center;
 }
 .section-2 .block4{
     background-color: var(--gray-color);
@@ -397,7 +410,8 @@ a.fourofourctaheader:hover{
 }
 /* end section 3 */
 section .block1, section .block2, section .block3, section .block4, section .block5{
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 10px;
+    /*box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 10px;*/
+    box-shadow: 8px 8px 32px 0px rgba(0,0,0,0.08);
     border-radius: 24px;
 }
 /* footer */
@@ -529,38 +543,36 @@ label.footerlabel{
     font-size: 96px;
     margin: 0;
     line-height: 1;
-    margin-left: 40px;
+    /*margin-left: 40px;*/
 }
 .undertext{
     color: var(--white-color);
+    font-size: 20px;
     margin: 0;
-    margin-left: 40px;
+    /*margin-left: 40px;*/
 }
 .section-1 .block1 .block1div{
     width: 380px;
     height: 370px;
     grid-row: 2;
+    text-align: center;
 }
 .section-1 .block2 .block2div{
-    margin-left: 60px;
-    margin-top: 56px;
+    margin-left: 40px;
+    margin-top: 40px;
     width: 647px;
 }
-.section-1 .block3 .block3div{
-    width: 380px;
-    height: 370px;
-    grid-row: 2;
-}
 .section-1 .block4 .block4div{
-    width: 356px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-left: 36px;
+    gap:24px;
+    padding: 40px;
 }
-.section-1 .block4 .block4div h3{
-    color: var(--main-color);
+.section-1 .block4 .block4div span{
+    font-weight: 400;
+    font-style: italic;
 }
 /* section 2 */
 .section-2 .block2 .block2div{
@@ -895,7 +907,7 @@ ul.menu {
     width: 101vw;
     left: 0;
     top: 0;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 8px 16px 8px 0px rgba(0,0,0,0.08);
     z-index: 1;
     border-radius: 0 0 95px 0;
     list-style-type: none;
@@ -976,6 +988,9 @@ ul.menu {
         margin-left: 0;
         text-align: left;
     }
+    .section-1 .block3{
+        height: 600px;
+    }
     .section-1 .block4{
         width: 90vw;
         height: auto;
@@ -1015,7 +1030,7 @@ ul.menu {
     .section-2 .block1{
         grid-row: 3;
         grid-column: 1;
-        height: 311px;
+        height: 1000px;
         width: 90vw;
         overflow: hidden;
     }
@@ -1287,6 +1302,12 @@ ul.menu {
         left: 60px;
         top: 20px;
     }
+    .section-1 .block3{
+        height: 438px;
+    }
+    .section-2 .block1{
+        height: 800px;
+    }
 }
 /* phone */
 @media screen and (max-width: 650px){
@@ -1312,6 +1333,12 @@ ul.menu {
     }
     nav ul.rightmobile{
         color: var(--white-color);
+    }
+    .section-1 .block3{
+        height: 438px;
+    }
+    .section-2 .block1{
+        height: 800px;
     }
 }
 
