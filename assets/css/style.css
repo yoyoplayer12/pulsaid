@@ -35,22 +35,22 @@ body{
 }
 h1{
     font-family: proxima-soft, sans-serif ;
-    font-weight: 800;
-    font-style: normal;
-    font-size: 36px;
+    font-weight: 600;
+    font-style: bold;
+    font-size: 40px;
     color: var(--white-color);
 }
 h2{
     font-family: proxima-soft, sans-serif;
-    font-weight: 700;
-    font-style: normal;;
-    font-size: 26px;
+    font-weight: 600;
+    font-style: bold;;
+    font-size: 32px;
 }
 p{
     font-family: proxima-soft, sans-serif;
     font-weight: 300;
     font-style: light;
-    font-size: 26px;
+    font-size: 20px;
     line-height: 1.5;
 }
 h3{
@@ -114,7 +114,7 @@ header div p{
 .indexvisualmasked{
     position: fixed;
     top: 0;
-    left: 0;
+    left: 64px;
     height: 100vh;
     transition: opacity ease-in-out;
     z-index: -1;
@@ -260,23 +260,23 @@ a.fourofourctaheader:hover{
 }
 .section-1 .block1{
     display: grid;
-    grid-template-rows: 123px auto 123px;
+    grid-template-rows: 91px auto 91px;
     background-color: var(--main-color);
     grid-row: auto / span 2;
     width: 380px;
-    height: 370px;
+    height: 307px;
     border-radius: 24px;
 }
 .section-1 .block2{
     background-color: var(--gray-color);
-    grid-row: auto / span 1;
+    grid-row: auto;
     width: 780px;
-    height: 268px;
+    height: 307px;
     border-radius: 24px;
-    grid-column: auto / span 2;
+    grid-column: span 2;
 }
 .section-1 .block2 h2{
-    color: var(--main-color);
+    color: var(--black-color);
 }
 .section-1 .block3{
     display: grid;
@@ -408,7 +408,8 @@ a.fourofourctaheader:hover{
 }
 /* end section 3 */
 section .block1, section .block2, section .block3, section .block4, section .block5{
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 10px;
+    /*box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 10px;*/
+    box-shadow: 8px 8px 32px 0px rgba(0,0,0,0.08);
     border-radius: 24px;
 }
 /* footer */
@@ -540,21 +541,23 @@ label.footerlabel{
     font-size: 96px;
     margin: 0;
     line-height: 1;
-    margin-left: 40px;
+    /*margin-left: 40px;*/
 }
 .undertext{
     color: var(--white-color);
+    font-size: 20px;
     margin: 0;
-    margin-left: 40px;
+    /*margin-left: 40px;*/
 }
 .section-1 .block1 .block1div{
     width: 380px;
     height: 370px;
     grid-row: 2;
+    text-align: center;
 }
 .section-1 .block2 .block2div{
-    margin-left: 60px;
-    margin-top: 56px;
+    margin-left: 40px;
+    margin-top: 40px;
     width: 647px;
 }
 .section-1 .block3 .block3div{
@@ -906,7 +909,7 @@ ul.menu {
     width: 101vw;
     left: 0;
     top: 0;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 8px 16px 8px 0px rgba(0,0,0,0.08);
     z-index: 1;
     border-radius: 0 0 95px 0;
     list-style-type: none;
