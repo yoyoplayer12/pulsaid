@@ -480,7 +480,8 @@ label.footerlabel{
     height: 20px;
     background-color: transparent;
     border: 0;
-    background-image: url("https://pulsaid.blob.core.windows.net/icons/sendarrow.svg");
+    background-size: cover;
+    background-image: url("https://pulsaid.blob.core.windows.net/photos/send.png");
     cursor: pointer;
 }
 .footer1 h3{
