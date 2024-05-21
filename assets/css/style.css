@@ -800,7 +800,7 @@ header.work{
 .contact .contactblock1, .contact .contactblock2, .contact .contactblock3{
     width: auto;
     margin-bottom: 24px;
-    background-color: var(--main-color);
+    background-color: transparent;
     color: var(--white-color);
     border-radius: 16px;
     margin-left: 60px;
@@ -850,6 +850,9 @@ header.work{
     align-items: flex-start;
     padding-top: 60px;
     padding-bottom: 60px;
+}
+.contact1img img{
+    max-height: 420px;
 }
 header.contact{
     height: 300px;
