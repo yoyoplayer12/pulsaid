@@ -788,6 +788,10 @@ header.about{
     justify-content: center;
     align-items: flex-start;
 }
+.work1img img{
+    max-height: 320px;
+    width: auto;
+}
 
 header.work{
     height: 300px;
