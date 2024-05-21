@@ -502,7 +502,7 @@ label.footerlabel{
 }
 .footer3 img{
     border-radius: 16px;
-    width: 100%;
+    width: auto;
     height: 100%;
     object-fit: cover;
 }
@@ -1201,7 +1201,7 @@ ul.menu {
         margin-left: 5vw;
     }
     .footer3 img{
-        width: 100%;
+        width: auto;
         height: 100%;
         object-fit: cover;
     }
