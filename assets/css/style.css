@@ -672,7 +672,7 @@ label.footerlabel{
 .about1div, .about2div{
     background-color: var(--off-white);
 }
-.aboutblock1{
+.aboutblock1, .aboutblock2{
     margin-bottom: 24px;
     display: flex;
     flex-wrap: wrap;
@@ -681,53 +681,26 @@ label.footerlabel{
     padding-left: 60px;
     max-width: 1800px;
 }
-.aboutblock1 img{
+.aboutblock1 img, .aboutblock2 img{
     border-radius: 16px;
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
 }
-.aboutblock1 p{
+.aboutblock1 p, .aboutblock2 p{
     max-width: 502px;
 }
-.about1div{
+.about1div, .about2div{
     padding: 20px 40px;
     border-radius: 16px;
     max-height: fit-content;
-
 }
-.about1img{
+.about1img, .about2img{
     max-height: 500px;
     width: 50%;
 }
-.aboutblock2{
-    height: auto;
-    margin-bottom: 24px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.aboutblock2 img{
-    border-radius: 16px;
-}
-.about2img{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 60px;
-}
-.aboutblock2 p{
-    width: 479px;
-    margin-right: 60px;
-}
-.about2div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
+
+
 .aboutblock3{
     height: 748px;
     margin-bottom: 48px;
