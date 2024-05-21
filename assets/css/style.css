@@ -7,6 +7,7 @@
     /* secondary color */
     --secondary-color: #505CA5;
     --secondary-color-light: #6F79B9;
+    --dark-secundair: #5864AE;
     /* call to action color */
     --cta-color: #EF795C;
     --cta-color-light: #EE9A79;
@@ -705,68 +706,44 @@ label.footerlabel{
 .about2img{
     justify-content: center;
 }
-
-
-.aboutblock3{
-    height: 748px;
-    margin-bottom: 48px;
-    padding-top: 60px;
-    padding-left: 48px;
+.aboutblock3 {
+    background-color: var(--dark-secundair);
+    border-radius: 16px;
+    text-align: center;
+    padding: 20px;
 }
+
+.aboutblock3 h2 {
+    margin-bottom: 20px;
+    color: var(--off-white);
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: var(--off-white);
+
+}
+
+.team-person {
+    text-align: center;
+}
+.team-person h4{
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.team-picture img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
 header.about{
     height: 300px;
-}
-.phototext{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 262px 1fr;
-    justify-content: center;
-    align-items: start;
-    column-gap: 28px;
-}
-.phototext img{
-    border-radius: 16px;
-}
-.phototext div{
-    width: 330px;
-    display: grid;
-    grid-template-rows: auto auto 200px auto;
-}
-.phototext div h3{
-    margin-bottom: 8px;
-}
-.phototext p{
-    margin-bottom: 40px;
-    margin-top: 0;
-}
-.phototext div a.email:link, .phototext div a.email:visited, .phototext div a.email:active{
-    border: 0;
-    background-color: transparent;
-    color: var(--white-color);
-    margin:0;
-    font-family: proxima-soft, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 16px;
-    padding: 0;
-    margin-bottom: 12px;
-}
-.phototext div a.email:hover{
-    border-bottom: 1px var(--white-color) solid;
-    border-radius: 0;
-    margin-bottom: 11px;
-}
-.phototext div a:link, .phototext div a:visited, .phototext div a:active{
-    text-decoration: none;
-    color: var(--white-color);
-    border: white 1px solid;
-    padding: 12px 24px;
-    border-radius: 8px;
-    width: fit-content;
-}
-.phototext div a:hover{
-    background-color: var(--cta-color);
-    border: var(--cta-color) 1px solid;
 }
 /* how it works */
 .work .workblock1, .work .workblock2, .work .workblock3{
@@ -1306,16 +1283,12 @@ ul.menu {
         max-width: 100%;
         justify-content: center;
     }
-    .aboutblock3 {
-        height: auto;
-        padding-left: 10px;
+    .team {
+        flex-direction: column;
     }
-    .phototext {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-    .phototext div {
-        width: 100%;
+
+    .team-person {
+        margin-bottom: 20px;
     }
 
 }
@@ -1375,16 +1348,12 @@ ul.menu {
         max-width: 100%;
         justify-content: center;
     }
-    .aboutblock3 {
-        height: auto;
-        padding-left: 10px;
+    .team {
+        flex-direction: column;
     }
-    .phototext {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-    .phototext div {
-        width: 100%;
+
+    .team-person {
+        margin-bottom: 20px;
     }
 }
 
