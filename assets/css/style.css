@@ -1294,6 +1294,26 @@ ul.menu {
     .team-person {
         margin-bottom: 20px;
     }
+    .work .workblock1, .work .workblock2, .work .workblock3 {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 20px 40px;
+    }
+    .workblock1 {
+        grid-template-columns: 1fr;
+        column-gap: 20px;
+        padding-left: 10px;
+    }
+    .workblock1 p {
+        width: auto;
+    }
+    .work1div, .work1img {
+        align-items: center;
+    }
+    .work1img img {
+        max-height: auto;
+        width: 100%;
+    }
 
 }
 /* phone */
@@ -1358,6 +1378,26 @@ ul.menu {
 
     .team-person {
         margin-bottom: 20px;
+    }
+    .work .workblock1, .work .workblock2, .work .workblock3 {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 20px 40px;
+    }
+    .workblock1 {
+        grid-template-columns: 1fr;
+        column-gap: 20px;
+        padding-left: 10px;
+    }
+    .workblock1 p {
+        width: auto;
+    }
+    .work1div, .work1img {
+        align-items: center;
+    }
+    .work1img img {
+        max-height: auto;
+        width: 100%;
     }
 }
 
