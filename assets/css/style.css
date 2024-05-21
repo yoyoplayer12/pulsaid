@@ -749,8 +749,8 @@ header.about{
 .work .workblock1, .work .workblock2, .work .workblock3{
     width: auto;
     margin-bottom: 24px;
-    background-color: var(--main-color);
-    color: var(--white-color);
+    background-color: var(--off-white);
+    color: var(--dark-grey);
     border-radius: 16px;
     margin-left: 60px;
     margin-right: 60px;
@@ -787,6 +787,10 @@ header.about{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+}
+.work1img img{
+    max-height: 320px;
+    width: auto;
 }
 
 header.work{
@@ -1290,6 +1294,26 @@ ul.menu {
     .team-person {
         margin-bottom: 20px;
     }
+    .work .workblock1, .work .workblock2, .work .workblock3 {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 20px 40px;
+    }
+    .workblock1 {
+        grid-template-columns: 1fr;
+        column-gap: 20px;
+        padding-left: 10px;
+    }
+    .workblock1 p {
+        width: auto;
+    }
+    .work1div, .work1img {
+        align-items: center;
+    }
+    .work1img img {
+        max-height: auto;
+        width: 100%;
+    }
 
 }
 /* phone */
@@ -1354,6 +1378,26 @@ ul.menu {
 
     .team-person {
         margin-bottom: 20px;
+    }
+    .work .workblock1, .work .workblock2, .work .workblock3 {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 20px 40px;
+    }
+    .workblock1 {
+        grid-template-columns: 1fr;
+        column-gap: 20px;
+        padding-left: 10px;
+    }
+    .workblock1 p {
+        width: auto;
+    }
+    .work1div, .work1img {
+        align-items: center;
+    }
+    .work1img img {
+        max-height: auto;
+        width: 100%;
     }
 }
 
