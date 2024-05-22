@@ -899,7 +899,33 @@ ul.menu {
 .colored div h3{
     color: var(--white-color);
 }
-
+.download-button{
+    font-size: 28px;
+    text-decoration: none;
+    color: var(--white-color);
+    background-color: var(--cta-color);
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+.apk1img{
+    width: 200px;
+    height: auto;
+    background-color: var(--white-color);
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+.apkdiv{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    text-align: center;
+}
+.apkblock{
+    width: fit-content;
+    margin-bottom: 40px;
+    margin-inline: auto;
+}
 /* smaller pc + blocks in 1 column */
 @media screen and (max-width: 1300px){
     .indexvisualmasked{
