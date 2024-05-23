@@ -699,9 +699,13 @@ label.footerlabel{
     flex: 0 0 30%;
     max-width: 30%;
     display: flex;
+    border-radius: 16px;
 }
 .about1img{
     justify-content: flex-end;
+    background-image: url("https://pulsaid.blob.core.windows.net/photos/groupphoto.jpg");
+    background-size: cover;
+    background-position: center;
 }
 .about2img{
     justify-content: center;
