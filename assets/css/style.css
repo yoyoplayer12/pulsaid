@@ -696,8 +696,8 @@ label.footerlabel{
 .about1img, .about2img{
     /*max-height: 500px;
     width: 50%;*/
-    flex: 0 0 30%;
-    max-width: 30%;
+    flex: 0 0 32%;
+    max-width: 32%;
     display: flex;
     border-radius: 16px;
 }
