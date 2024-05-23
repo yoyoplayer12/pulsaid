@@ -699,9 +699,14 @@ label.footerlabel{
     flex: 0 0 30%;
     max-width: 30%;
     display: flex;
+    border-radius: 16px;
 }
 .about1img{
+    min-height: 400px;
     justify-content: flex-end;
+    background-image: url("https://pulsaid.blob.core.windows.net/photos/groupphoto.jpg");
+    background-size: cover;
+    background-position: center;
 }
 .about2img{
     justify-content: center;
@@ -1315,6 +1320,9 @@ ul.menu {
         flex: 0 0 100%;
         max-width: 100%;
         justify-content: center;
+    }
+    .about1img{
+        min-height: 500px;    
     }
     .team {
         flex-direction: column;
