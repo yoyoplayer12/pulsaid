@@ -1366,6 +1366,9 @@ ul.menu {
         word-wrap: break-word;
         margin-bottom: 40px;
     }
+    .nav{
+        max-height: 100px;
+    }
     .headerctas{
         width: 180px;
         display: block;
@@ -1379,7 +1382,11 @@ ul.menu {
     }
     .indexvisual{
         width: 101vw;
+        height: 95%;
         position: absolute;
+    }
+    .headercontentindex{
+        margin-top: 16vw;
     }
     nav ul.rightmobile{
         color: var(--white-color);
