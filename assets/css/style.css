@@ -74,7 +74,7 @@ q{
 .justheadercontent{
     width: 100vh;
     margin-left: 64px;
-    margin-top: 74px;
+    margin-top: 10vw;
 }
 /* index header */
 .indexp{
@@ -90,14 +90,15 @@ header div p{
     display: grid;
     grid-template-columns: 3fr 1fr;
 }
+/*darkblue header*/
 .indexvisual{
-    height: 101vh;
+    min-height: 44vw;
     width: 80vw;
     background-color: var(--main-color);
     border-radius: 0 0 150px 0;
     /* min-width: 1105px; */
-    max-width: 1280px;
-    position: fixed;
+    /*max-width: 1280px;*/
+    position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
@@ -105,22 +106,24 @@ header div p{
 .visualmobile{
     display: none;
 }
+/*photo of app*/
 .indexvisualgraphic{
     background-image: url(https://pulsaid.blob.core.windows.net/photos/heroImage.png);
     background-size: cover;
     /*position: absolute;*/
     top: 130px;
-    /*left: 65vw;*/
+    left: 65vw;
     border-radius: 16px;
     width: 500px;
     height: 500px;
 }
+/*two half circles*/
 .indexvisualmasked{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 64px;
     height: 100vh;
-    transition: opacity ease-in-out;
+    /*transition: opacity ease-in-out;*/
     z-index: -1;
 }
 nav{
@@ -131,6 +134,9 @@ nav{
     font-size: 20px;
     font-family: proxima-soft, sans-serif;
     font-weight: 300;
+    position: fixed;
+    width: 100%;
+    transition: background-color 0.5s ease-in-out;
 }
 nav ul.left{
     list-style-type: none;
@@ -205,7 +211,7 @@ nav ul li a.active, nav ul li a:hover{
     flex-wrap: wrap;
     align-items: flex-start;
     gap: 16vw;
-    margin-top: 4vw;
+    margin-top: 10vw;
 }
 .headercontentindex p{
     width: 580px;
@@ -696,8 +702,8 @@ label.footerlabel{
 .about1img, .about2img{
     /*max-height: 500px;
     width: 50%;*/
-    flex: 0 0 30%;
-    max-width: 30%;
+    flex: 0 0 32%;
+    max-width: 32%;
     display: flex;
     border-radius: 16px;
 }
@@ -1360,6 +1366,9 @@ ul.menu {
         word-wrap: break-word;
         margin-bottom: 40px;
     }
+    .nav{
+        max-height: 100px;
+    }
     .headerctas{
         width: 180px;
         display: block;
@@ -1373,7 +1382,11 @@ ul.menu {
     }
     .indexvisual{
         width: 101vw;
+        height: 95%;
         position: absolute;
+    }
+    .headercontentindex{
+        margin-top: 16vw;
     }
     nav ul.rightmobile{
         color: var(--white-color);

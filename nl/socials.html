@@ -199,6 +199,15 @@
 
 </html>
 <script>
+     var nav = document.querySelector('nav');
+    // bij scroll een gevulde achtergrondkleur
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+            nav.style.backgroundColor = 'var(--main-color)';
+        } else {
+            nav.style.backgroundColor = 'transparent';
+        }
+    }); 
     document.querySelector('.hamburger').addEventListener('click', function() {
         var menu = document.querySelector('.menu');
         if (menu.style.display === 'none') {
