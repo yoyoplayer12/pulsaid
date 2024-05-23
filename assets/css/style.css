@@ -74,7 +74,7 @@ q{
 .justheadercontent{
     width: 100vh;
     margin-left: 64px;
-    margin-top: 74px;
+    margin-top: 10vw;
 }
 /* index header */
 .indexp{
@@ -211,7 +211,7 @@ nav ul li a.active, nav ul li a:hover{
     flex-wrap: wrap;
     align-items: flex-start;
     gap: 16vw;
-    margin-top: 4vw;
+    margin-top: 10vw;
 }
 .headercontentindex p{
     width: 580px;
