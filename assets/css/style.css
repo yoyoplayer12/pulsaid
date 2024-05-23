@@ -90,14 +90,15 @@ header div p{
     display: grid;
     grid-template-columns: 3fr 1fr;
 }
+/*darkblue header*/
 .indexvisual{
-    height: 101vh;
+    min-height: 44vw;
     width: 80vw;
     background-color: var(--main-color);
     border-radius: 0 0 150px 0;
     /* min-width: 1105px; */
-    max-width: 1280px;
-    position: fixed;
+    /*max-width: 1280px;*/
+    position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
@@ -105,22 +106,24 @@ header div p{
 .visualmobile{
     display: none;
 }
+/*photo of app*/
 .indexvisualgraphic{
     background-image: url(https://pulsaid.blob.core.windows.net/photos/heroImage.png);
     background-size: cover;
     /*position: absolute;*/
     top: 130px;
-    /*left: 65vw;*/
+    left: 65vw;
     border-radius: 16px;
     width: 500px;
     height: 500px;
 }
+/*two half circles*/
 .indexvisualmasked{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 64px;
     height: 100vh;
-    transition: opacity ease-in-out;
+    /*transition: opacity ease-in-out;*/
     z-index: -1;
 }
 nav{

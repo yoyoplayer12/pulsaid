@@ -317,7 +317,7 @@
 
 </html>
 <script>
-    window.addEventListener('scroll', function() {
+    /*window.addEventListener('scroll', function() {
         var scrollPosition = window.pageYOffset;
         var opacity = 1 - scrollPosition / window.innerHeight;
         var scale = 1 - scrollPosition / 200; // Adjust 2000 to control the rate of scaling
@@ -328,7 +328,7 @@
         scale = Math.max(scale, 0); // Prevent the image from getting too small
         document.querySelector('.indexvisualgraphic').style.transform = 'translateY(' + scrollPosition * 0.7 +
             'px) scale(' + scale + ')';
-    });
+    });*/
     document.querySelector('.hamburger').addEventListener('click', function() {
         var menu = document.querySelector('.menu');
         if (menu.style.display === 'none') {
