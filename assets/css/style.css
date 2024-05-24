@@ -437,6 +437,9 @@ footer{
     grid-template-rows: 300px 256px;
     grid-template-columns: 1fr 1fr;
 }
+.footer#contact-page{
+    margin-top: 20vw;
+}
 .footer a:link, .footer a:visited{
     text-decoration: none;
     color: var(--dark-grey);
@@ -825,6 +828,7 @@ header.work{
     column-gap: 250px;
     padding-left: 60px;
     max-width: 1800px;
+    margin-top: 4vw;
 }
 .contactblock1 img{
     border-radius: 16px;
@@ -1357,6 +1361,9 @@ ul.menu {
         max-height: auto;
         width: 100%;
     }
+    .footer#contact-page{
+        margin-top: 40vw;
+    }
 
 }
 /* phone */
@@ -1448,6 +1455,9 @@ ul.menu {
     .work1img img {
         max-height: auto;
         width: 100%;
+    }
+    .footer#contact-page{
+        margin-top: 40vw;
     }
 }
 
