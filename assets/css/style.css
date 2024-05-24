@@ -823,10 +823,9 @@ header.work{
 .contactblock1{
     height: auto;
     margin-bottom: 24px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 250px;
-    padding-left: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     max-width: 1800px;
     margin-top: 4vw;
 }
@@ -855,8 +854,18 @@ header.work{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    gap: 6px;
+}
+.contact1div h2{
+    margin-top: 24px;
+    margin-bottom: 16px;
+    max-width: 40vw;
+}
+.contact1div p{
+    margin: 0px;
+}
+.contact1div a{
+    margin: 0px;
 }
 .contact1img{
     display: flex;
@@ -1364,6 +1373,9 @@ ul.menu {
     .footer#contact-page{
         margin-top: 40vw;
     }
+    .contact1div h2{
+        max-width: 100%;
+    }
 
 }
 /* phone */
@@ -1457,7 +1469,18 @@ ul.menu {
         width: 100%;
     }
     .footer#contact-page{
-        margin-top: 40vw;
+        margin-top: 120vw;
+    }
+    .contactblock1{
+        justify-content: space-evenly;
+        margin-top: 16vw;
+    }
+    .contactblock1 .contact1img img{
+        max-width: 100%;
+    
+    }
+    .contact1div h2{
+        max-width: 100%;
     }
 }
 
