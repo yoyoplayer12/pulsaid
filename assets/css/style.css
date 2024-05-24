@@ -1255,7 +1255,7 @@ ul.menu {
         height: 20px;
         background-color: transparent;
         border: 0;
-        background-image: url("https://pulsaid.blob.core.windows.net/icons/sendarrow.svg");
+        background-image: url("https://pulsaid.blob.core.windows.net/photos/send.png");
         cursor: pointer;
     }
 }
