@@ -137,6 +137,7 @@ nav{
     position: fixed;
     width: 100%;
     transition: background-color 0.5s ease-in-out;
+    z-index: 100;
 }
 nav ul.left{
     list-style-type: none;
