@@ -359,6 +359,7 @@ a.fourofourctaheader:hover{
     background-image:url(https://pulsaid.blob.core.windows.net/photos/onzePartners.jpg);
     background-origin: content-box;
     background-size: cover;
+    background-position: center bottom;
 }
 .section-2 .block1img{
     border-radius: 16px;
@@ -1395,6 +1396,9 @@ ul.menu {
     .contact1div h2{
         max-width: 100%;
     }
+    .section-2 .block1{
+        background-position: center bottom;
+    }
 
 }
 /* phone */
@@ -1501,6 +1505,9 @@ ul.menu {
     .contact1div h2{
         max-width: 100%;
     }
+    .section-2 .block1{
+        background-size: 100% 100%;
+    }
 }
 
 /* donate dissapear */
@@ -1515,5 +1522,8 @@ ul.menu {
 @media all and (min-width: 1600px) {
     .indexvisualgraphic{
         left: 1150px;
+    }
+    .section-2 .block1{
+        background-size: 100% 100%;
     }
 }
