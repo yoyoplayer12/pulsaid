@@ -58,8 +58,7 @@ p{
 }
 h3{
     font-family: proxima-soft, sans-serif;
-    font-weight: 300;
-    font-style: normal;
+    font-weight: 600;
     font-size: 20px;
     /*color: var(--white-color);*/
 }
@@ -75,6 +74,24 @@ q{
     width: 100vh;
     margin-left: 64px;
     margin-top: 10vw;
+}
+div.tertiary_button{
+    box-sizing: border-box;
+}
+div.tertiary_button a.tertiary_button{
+   color: var(--dark-grey);
+   font-weight: 500;
+   /*padding: 10px 24px;*/
+   border-radius: 8px;
+   text-decoration: underline;
+   text-decoration-color: var(--cta-color);
+   text-decoration-thickness: 4px;
+   text-underline-offset: 8px;
+}
+div.tertiary_button a.tertiary_button:hover{
+    font-weight: 600;
+    text-decoration-color: var(--main-color);
+    text-underline-offset: 10px;
 }
 /* index header */
 .indexp{
@@ -137,6 +154,7 @@ nav{
     position: fixed;
     width: 100%;
     transition: background-color 0.5s ease-in-out;
+    z-index: 100;
 }
 nav ul.left{
     list-style-type: none;
@@ -436,6 +454,9 @@ footer{
     display: grid;
     grid-template-rows: 300px 256px;
     grid-template-columns: 1fr 1fr;
+}
+.footer#contact-page{
+    margin-top: 20vw;
 }
 .footer a:link, .footer a:visited{
     text-decoration: none;
@@ -820,11 +841,11 @@ header.work{
 .contactblock1{
     height: auto;
     margin-bottom: 24px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 250px;
-    padding-left: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     max-width: 1800px;
+    margin-top: 4vw;
 }
 .contactblock1 img{
     border-radius: 16px;
@@ -851,8 +872,18 @@ header.work{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    gap: 6px;
+}
+.contact1div h2{
+    margin-top: 24px;
+    margin-bottom: 16px;
+    max-width: 40vw;
+}
+.contact1div p{
+    margin: 0px;
+}
+.contact1div a{
+    margin: 0px;
 }
 .contact1img{
     display: flex;
@@ -1242,7 +1273,7 @@ ul.menu {
         height: 20px;
         background-color: transparent;
         border: 0;
-        background-image: url("https://pulsaid.blob.core.windows.net/icons/sendarrow.svg");
+        background-image: url("https://pulsaid.blob.core.windows.net/photos/send.png");
         cursor: pointer;
     }
 }
@@ -1357,6 +1388,12 @@ ul.menu {
         max-height: auto;
         width: 100%;
     }
+    .footer#contact-page{
+        margin-top: 40vw;
+    }
+    .contact1div h2{
+        max-width: 100%;
+    }
 
 }
 /* phone */
@@ -1448,6 +1485,20 @@ ul.menu {
     .work1img img {
         max-height: auto;
         width: 100%;
+    }
+    .footer#contact-page{
+        margin-top: 120vw;
+    }
+    .contactblock1{
+        justify-content: space-evenly;
+        margin-top: 16vw;
+    }
+    .contactblock1 .contact1img img{
+        max-width: 100%;
+    
+    }
+    .contact1div h2{
+        max-width: 100%;
     }
 }
 
