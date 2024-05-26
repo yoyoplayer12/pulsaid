@@ -44,6 +44,8 @@
     <!--<script  type="module" src="/assets/javascript/heart.js"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
     <script src="/assets/javascript/languageswitcher.js" defer></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>PulsAid - Home</title>
 
     <!-- track stuff -->
@@ -162,13 +164,13 @@
         </div>
     </header>
     <section class="section-1">
-        <div class="block1">
+        <div class="block1" data-aos="fade-up">
             <div class="block1div">
                 <p class="bignumber">9 000</p>
                 <h2 class="undertext">Hartstilstanden in België</h2>
             </div>
         </div>
-        <div class="block2">
+        <div class="block2" data-aos="fade-up">
             <div class="block2div">
                 <h2>Waarom?</h2>
                 <p>Omdat elke seconde telt en samen kunnen we een verschil maken dat levens verandert.
@@ -179,17 +181,17 @@
                 </p>
             </div>
         </div>
-        <div class="block3">
+        <div class="block3" data-aos="fade-up-right">
             <!--<img class="block5img" src="/pulsaid/assets/images/CharlotteDepoorter.jpg" alt="afbeelding van dame dat een boek leest">-->
         </div>
-        <div class="block4">
+        <div class="block4" data-aos="fade-up-right">
             <div class="block4div">
                 <q>Ik heb geen EHBO-certificaat, maar moest onlangs wel een reanimatie uitvoeren. <br>Ik had 1 les
                     gehad op school als leerkracht. Ik zou dankbaar geweest zijn voor zo'n app.</q>
                 <span>Charlotte Depoorter</span>
             </div>
         </div>
-        <div class="block5">
+        <div class="block5" data-aos="fade-up-left">
             <div class="block5div">
                 <svg width="104" height="105" viewBox="0 0 104 105" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <mask id="mask0_1673_15450" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
@@ -212,58 +214,58 @@
         </div>
     </section>
     <section class="section-2">
-        <div class="block1">
+        <div class="block1" data-aos="fade-up">
             <!--<img class="block1img" src="/pulsaid/assets/images/onzePartners.svg" alt="Blauw kader met de tekst onze partners">-->
         </div>
-        <div class="block2">
+        <div class="block2" data-aos="fade-up">
             <div class="block2div">
                 <h2>Ons doel</h2>
                 <p>Meer levens redden, en de kansen verhogen van mensen met hartfalen. Zo willen we de toekomst van de
                     hartzorg vormen.</p>
             </div>
         </div>
-        <div class="block3">
+        <div class="block3" data-aos="fade-up">
             <div class="block3div">
                 <p class="bignumber">50%</p>
                 <h2 class="undertext">Overleeft zonder letsel</h2>
             </div>
         </div>
-        <div class="block4">
+        <div class="block4" data-aos="fade-up">
             <div class="block4div">
                 <!--hier komt partner 1-->
                 <h3>Word jij onze partner?</h3>
                 <p>Wij zijn nog op zoek naar partners die graag met ons samenwerken.</p>
             </div>
         </div>
-        <div class="block5">
+        <div class="block5" data-aos="fade-up">
             <div class="block5div">
                 <!--hier komt partner 2-->
                 <h3>Interesse?</h3>
                 <p>Wij zijn nog op zoek naar partners die graag met ons samenwerken.</p>
                 <!--deze button verdwijnt als de twee partners opgevuld zijn-->
-                <div class="tertiary_button">
+                <div class="tertiary_button" data-aos="zoom-in-up"  data-aos-anchor-placement="center-bottom">
                     <a href="mailto:contact@pulsaid.be" class="tertiary_button">Laat van je horen</a>
                 </div>
             </div>
         </div>
     </section>
     <section class="section-3">
-        <div class="block1">
+        <div class="block1" data-aos="fade-up">
             <div class="block1div">
                 <!--Hier komt getuigenis 1-->
                 <h3>Onbekend</h3>
                 <p>We zijn nog op zoek naar mensen met ervaringen van onze applicatie.</p>
             </div>
         </div>
-        <div class="block2">
+        <div class="block2" data-aos="fade-up">
             <div class="block2div">
                 <!--Hier komt getuigenis 2-->
                 <h3>Onbekend</h3>
                 <p>We zijn nog op zoek naar mensen met ervaringen van onze applicatie.</p>
             </div>
         </div>
-        <div class="block3 colored">
-            <div class="block3div">
+        <div class="block3 colored" data-aos="fade-up">
+            <div class="block3div" data-aos="flip-left">
                 <h3>Jij?</h3>
                 <p>Heb jij een ervaring met PulsAid dat je zeker wilt delen? Contacteer ons zeker op
                     contact@pulsaid.be
@@ -334,6 +336,7 @@
 
 </html>
 <script>
+    AOS.init();
     /*window.addEventListener('scroll', function() {
         if (window.innerWidth > 650) {
             var scrollPosition = window.pageYOffset;
