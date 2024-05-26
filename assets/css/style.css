@@ -58,8 +58,7 @@ p{
 }
 h3{
     font-family: proxima-soft, sans-serif;
-    font-weight: 300;
-    font-style: normal;
+    font-weight: 600;
     font-size: 20px;
     /*color: var(--white-color);*/
 }
@@ -75,6 +74,24 @@ q{
     width: 100vh;
     margin-left: 64px;
     margin-top: 10vw;
+}
+div.tertiary_button{
+    box-sizing: border-box;
+}
+div.tertiary_button a.tertiary_button{
+   color: var(--dark-grey);
+   font-weight: 500;
+   /*padding: 10px 24px;*/
+   border-radius: 8px;
+   text-decoration: underline;
+   text-decoration-color: var(--cta-color);
+   text-decoration-thickness: 4px;
+   text-underline-offset: 8px;
+}
+div.tertiary_button a.tertiary_button:hover{
+    font-weight: 600;
+    text-decoration-color: var(--main-color);
+    text-underline-offset: 10px;
 }
 /* index header */
 .indexp{
