@@ -601,7 +601,8 @@ label.footerlabel{
     justify-content: center;
     align-items: flex-start;
     gap:24px;
-    padding: 40px;
+    margin-left: 40px;
+    margin-top: 40px;
 }
 .section-1 .block4 .block4div span{
     font-weight: 400;
@@ -609,7 +610,7 @@ label.footerlabel{
 }
 /* section 2 */
 .section-2 .block2 .block2div{
-    margin-left: 34px;
+    margin-left: 40px;
     margin-top: 32px;
     width: 302px;
 }
@@ -621,28 +622,28 @@ label.footerlabel{
     grid-row: 2;
 }
 .section-2 .block4 .block4div{
-    margin-left: 34px;
-    margin-top: 32px;
+    margin-left: 40px;
+    margin-top: 40px;
     width: 302px;
 }
 .section-2 .block5 .block5div{
-    margin-left: 34px;
+    margin-left: 40px;
     margin-top: 32px;
     width: 302px;
 }
 /* section 3 */
 .section-3 .block1 .block1div{
-    margin-left: 34px;
+    margin-left: 40px;
     margin-top: 32px;
     width: 302px;
 }
 .section-3 .block2 .block2div{
-    margin-left: 34px;
+    margin-left: 40px;
     margin-top: 32px;
     width: 302px;
 }
 .section-3 .block3 .block3div{
-    margin-left: 34px;
+    margin-left: 40px;
     margin-top: 32px;
     width: 302px;
 }
@@ -1040,7 +1041,7 @@ ul.menu {
         grid-row: 4;
     }
     .section-1 .block4 .block4div{
-        width: 80vw;
+        width: 70vw;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 40px;
