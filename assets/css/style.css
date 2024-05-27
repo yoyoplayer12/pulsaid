@@ -362,13 +362,7 @@ a.fourofourctaheader:hover{
     background-position: center bottom;
 }
 .section-2 .block1.en{
-    grid-row: 1 / span 4;
-    grid-column: 1;
-    width: 380px;
     background-image:url(https://pulsaid.blob.core.windows.net/photos/ourPartners.jpg);
-    background-origin: content-box;
-    background-size: cover;
-    background-position: center bottom;
 }
 .section-2 .block1img{
     border-radius: 16px;
