@@ -71,7 +71,7 @@ q{
     color: var(--black-color);
 }
 .justheadercontent{
-    width: 100vh;
+    width: 100vw;
     margin-left: 64px;
     margin-top: 10vw;
 }
@@ -1294,6 +1294,10 @@ ul.menu {
     .indexvisualgraphic{
         display: none;
     }
+    nav{
+        height: 20vw;
+        width: 100vw;
+    }
     nav ul.right{
         display: none;
     }
@@ -1314,6 +1318,10 @@ ul.menu {
         align-items: center;
         padding: 0;
         height: 100%;
+    }
+    .justheadercontent{
+        margin-top: 32vw;
+        margin-left: 32px;        
     }
     .donate{
         position: absolute;
@@ -1340,7 +1348,7 @@ ul.menu {
     .mobilelogo{
         position: absolute;
         left: 60px;
-        top: 20px;
+        top: 4px;
     }
     .section-1 .block3{
         height: 438px;
@@ -1418,7 +1426,8 @@ ul.menu {
         margin-bottom: 40px;
     }
     .nav{
-        max-height: 100px;
+        height: 20vw;
+        width: 100vw;
     }
     .headerctas{
         width: 180px;
@@ -1435,6 +1444,10 @@ ul.menu {
         width: 101vw;
         height: 95%;
         position: absolute;
+    }
+    .justheadercontent{
+        margin-top: 32vw;
+        margin-left: 32px;        
     }
     .headercontentindex{
         margin-top: 16vw;
