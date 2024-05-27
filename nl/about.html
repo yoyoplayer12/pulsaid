@@ -32,6 +32,8 @@
     <meta property="twitter:image" content="" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
     <script src="/assets/javascript/languageswitcher.js" defer></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>PulsAid - Over ons</title>
 
     <!-- track stuff -->
@@ -138,7 +140,7 @@
         </div>
     </header>
     <section class="about">
-        <div class="aboutblock1">
+        <div class="aboutblock1" data-aos="fade-up">
             <div class="about1div">
                 <h2>Wat doen we?</h2>
                 <p>PulsAid is een baanbrekend initiatief met een missie: <br><i> overlevingskansen vergroten tijdens
@@ -160,7 +162,7 @@
             </div>
 
         </div>
-        <div class="aboutblock2">
+        <div class="aboutblock2" data-aos="fade-up">
             <div class="about2img">
                 <img src="https://pulsaid.blob.core.windows.net/photos/ambulance.png" alt="illustration of 112">
             </div>
@@ -172,7 +174,7 @@
                     defibrillatoren maken hen waardevolle schakels in de keten van spoedeisende hulp.</p>
             </div>
         </div>
-        <div class="aboutblock3">
+        <div class="aboutblock3" data-aos="fade-up">
             <h2>Wij zijn #PulsAid</h2>
             <div class="team">
                 <div class="team-person">
@@ -302,6 +304,7 @@
 
 </html>
 <script>
+    AOS.init();
      var nav = document.querySelector('nav');
     // bij scroll een gevulde achtergrondkleur
     window.addEventListener('scroll', function() {

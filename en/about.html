@@ -32,6 +32,8 @@
     <meta property="twitter:image" content="" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
     <script src="/assets/javascript/languageswitcher.js" defer></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>PulsAid - About</title>
 
     <!-- track stuff -->
@@ -116,7 +118,7 @@
         </div>
     </header>
     <section class="about">
-        <div class="aboutblock1">
+        <div class="aboutblock1" data-aos="fade-up">
             <div class="about1div">
                 <h2>What Do We Do?</h2>
                 <p>PulsAid is a groundbreaking initiative with one mission: <br><i>to increase survival rates during cardiac arrests.</i>
@@ -130,7 +132,7 @@
                 <!--<img src="https://pulsaid.blob.core.windows.net/photos/group.jpg" alt="Groupphoto">-->          
             </div>
         </div>
-        <div class="aboutblock2">
+        <div class="aboutblock2" data-aos="fade-up">
             <div class="about2img">
                 <img src="https://pulsaid.blob.core.windows.net/photos/ambulance.png" alt="illustration of 112">
             </div>
@@ -139,7 +141,7 @@
                 <p>Citizen responders play a crucial role in emergencies. These are ordinary citizens trained to provide first aid until professional emergency services arrive. Citizen responders are ready to save lives, and their quick response, basic knowledge of CPR, and the use of defibrillators make them valuable links in the chain of emergency care.</p>
             </div>
         </div>
-        <div class="aboutblock3">
+        <div class="aboutblock3" data-aos="fade-up">
             <h2>We are #PulsAid</h2>
             <div class="team">
                 <div class="team-person">
@@ -269,6 +271,7 @@
 
 </html>
 <script>
+    AOS.init();
      var nav = document.querySelector('nav');
     // bij scroll een gevulde achtergrondkleur
     window.addEventListener('scroll', function() {
