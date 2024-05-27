@@ -1295,6 +1295,7 @@ ul.menu {
         display: none;
     }
     nav{
+        height: 20vw;
         width: 100vw;
     }
     nav ul.right{
@@ -1347,7 +1348,7 @@ ul.menu {
     .mobilelogo{
         position: absolute;
         left: 60px;
-        top: 20px;
+        top: 4px;
     }
     .section-1 .block3{
         height: 438px;
@@ -1425,7 +1426,7 @@ ul.menu {
         margin-bottom: 40px;
     }
     .nav{
-        max-height: 20vw;
+        height: 20vw;
         width: 100vw;
     }
     .headerctas{
