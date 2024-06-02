@@ -684,6 +684,9 @@ label.footerlabel{
 .pulsate {
     animation: pulsate 0.5s ease-in-out infinite;
 }
+.mobile-div{
+    display: none;
+}
 @keyframes pulsate {
     0% { transform: scale(1); }
     50% { transform: scale(1.1); }
@@ -972,6 +975,9 @@ ul.menu {
     width: fit-content;
     margin-bottom: 40px;
     margin-inline: auto;
+}
+.mobile-div{
+    display: none;
 }
 /* smaller pc + blocks in 1 column */
 @media screen and (max-width: 1300px){
@@ -1264,6 +1270,9 @@ ul.menu {
         margin-left: 0;
     }
     /* end footer */
+    .mobile-div{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -1280,6 +1289,9 @@ ul.menu {
         border: 0;
         background-image: url("https://pulsaid.blob.core.windows.net/photos/send.png");
         cursor: pointer;
+    }
+    .mobile-div{
+        display: none;
     }
 }
 
@@ -1410,6 +1422,9 @@ ul.menu {
     .section-2 .block1{
         background-position: center bottom;
     }
+    .mobile-div{
+        display: none;
+    }
 
 }
 /* phone */
@@ -1523,6 +1538,12 @@ ul.menu {
     }
     .section-2 .block1{
         background-size: 100% 100%;
+    }
+    .desktop-div{
+        display: none;
+    }
+    .mobile-div{
+        display: block;
     }
 }
 
