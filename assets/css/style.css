@@ -1576,6 +1576,7 @@ ul.menu {
     }
     .desktop-div{
         display: none;
+        background-color: green;
     }
 }
 
