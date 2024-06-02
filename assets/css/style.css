@@ -684,6 +684,9 @@ label.footerlabel{
 .pulsate {
     animation: pulsate 0.5s ease-in-out infinite;
 }
+.mobile-div{
+    display: none;
+}
 @keyframes pulsate {
     0% { transform: scale(1); }
     50% { transform: scale(1.1); }
@@ -947,12 +950,16 @@ ul.menu {
     color: var(--white-color);
 }
 .download-button{
-    font-size: 28px;
+    display: inline-block;
+    width: 100%;
+    font-size: 24px;
     text-decoration: none;
     color: var(--white-color);
-    background-color: var(--cta-color);
-    padding: 5px 20px;
-    border-radius: 10px;
+    background-color: transparent;
+    border: 1px var(--white-color) solid;
+    padding: 10px 24px;
+    border-radius: 8px;
+    box-sizing: border-box;
 }
 .apk1img{
     width: 200px;
@@ -965,14 +972,24 @@ ul.menu {
 .apkdiv{
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 .apkblock{
     width: fit-content;
     margin-bottom: 40px;
     margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+.mobile-div{
+    display: none;
+}
+
 /* smaller pc + blocks in 1 column */
 @media screen and (max-width: 1300px){
     .indexvisualmasked{
@@ -1264,6 +1281,9 @@ ul.menu {
         margin-left: 0;
     }
     /* end footer */
+    .mobile-div{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -1280,6 +1300,9 @@ ul.menu {
         border: 0;
         background-image: url("https://pulsaid.blob.core.windows.net/photos/send.png");
         cursor: pointer;
+    }
+    .mobile-div{
+        display: none;
     }
 }
 
@@ -1410,6 +1433,9 @@ ul.menu {
     .section-2 .block1{
         background-position: center bottom;
     }
+    .mobile-div{
+        display: none;
+    }
 
 }
 /* phone */
@@ -1523,6 +1549,33 @@ ul.menu {
     }
     .section-2 .block1{
         background-size: 100% 100%;
+    }
+    .mobile-div{
+        display: block;
+        width: 100%;
+    }
+    .apkdiv{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .apkdiv a{
+        display: block;
+        width: 100%;
+    }
+    .apkblock{
+        width: fit-content;
+        margin-bottom: 40px;
+        margin-inline: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .desktop-div{
+        display: none;
     }
 }
 
